@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../../styles/Review.module.css";
+import appstyles from "../../App.module.css"
 import { useCurrentUser } from "../../contexts/CurrentUserContext";
 import { Card, Col, Media, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
 import { Link, useHistory} from "react-router-dom";
@@ -26,6 +27,7 @@ const Review = (props) => {
     likes_count,
     like_id,
     comments_count,
+    human_readable_category,
   } = props;
 
   const currentUser = useCurrentUser();
@@ -117,8 +119,9 @@ const Review = (props) => {
                             <Card.Title className="text-center my-4"> {book_title}</Card.Title>}
                         {book_author && 
                             <Card.Subtitle className="mb-2 text-muted mb-3">{book_author}</Card.Subtitle>}
-                        {book_category!=="other" && 
-                            <Card.Subtitle className="mb-2 text-muted mb-3">{book_category}</Card.Subtitle>}
+                        {book_category && 
+                            <Card.Text><strong>Category: </strong>{human_readable_category}</Card.Text>}
+              
                         {caption && 
                             <Card.Text className="text-muted text-start mb-4">- {caption}</Card.Text>}
                         {rating && 
@@ -162,13 +165,15 @@ const Review = (props) => {
         </Col>
 
       </Row>
-      <Row>
-        <Card.Body className={styles.ReviewTitle}>
-            <Card.Title >Review:</Card.Title>
+
+      <Row className= {styles.ReviewRow}>
+        <Card.Body className={styles.ReviewBody}>
+        <Card.Title className="font-weight-bold pb-2">Review:</Card.Title>
             
-            {review_body && <Card.Text>{review_body}</Card.Text>}
+            {review_body && <Card.Text className={appstyles.BodyFont}>{review_body}</Card.Text>}
         </Card.Body>
       </Row>
+
     </Card>
   );
 };
