@@ -3,6 +3,7 @@
   }
 
 .UnFollowBtn{
+  font-size: smaller;
   border: none;
   background-color: #479b78;
   color: #ffffff;
@@ -26,6 +27,7 @@
 }
 
 .FollowBtn {
+  font-size: smaller;
   border: none;
   background-color: aliceblue;
   color: #242a3d;
