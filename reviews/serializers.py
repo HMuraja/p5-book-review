@@ -15,6 +15,10 @@ class ReviewSerializer(serializers.ModelSerializer):
     comments_count = serializers.ReadOnlyField()
     like_id = serializers.SerializerMethodField()
     likes_count = serializers.ReadOnlyField()
+    human_readable_category = serializers.SerializerMethodField()
+
+    def get_human_readable_category(self, obj):
+        return dict(Review.book_category_choices).get(obj.book_category)
 
     def validate_image(self, value):
         if value.size > 2 * 1024 * 1024:
