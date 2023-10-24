@@ -6,6 +6,7 @@ import { useCurrentUser, useSetCurrentUser} from "../contexts/CurrentUserContext
 import axios from "axios";
 import Avatar from "./Avatar";
 import useClickOutsideToggle from "../hooks/useClickOutsideToggle";
+import { removeTokenTimestamp } from "../utils/utils";
 
 const NavBar = () => {
   const currentUser = useCurrentUser();
@@ -17,6 +18,7 @@ const NavBar = () => {
     try {
       await axios.post("dj-rest-auth/logout/");
       setCurrentUser(null);
+      removeTokenTimestamp();
     } catch (err) {
     }
   };
@@ -60,7 +62,7 @@ const NavBar = () => {
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}>
           
-        <Avatar src={currentUser?.profile_image} text= "My Profile" height={40} />
+        <Avatar src={currentUser?.profile_image} text={currentUser?.username} height={40} />
 
       </NavLink>
     </>
