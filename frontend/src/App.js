@@ -51,14 +51,11 @@ function App() {
                 />
               )}
             />
-            <Route exact path="/" component={() => <h1>Home page</h1>} />
-            <Route exact path="/signin" component={SignInForm} />
-            <Route exact path="/signup" component={SignUpForm} />
-            <Route exact path="/signout" component={() => <h1>Signout</h1>} />
-            <Route exact path="/reviews/create" component={ReviewCreateForm} />
-            <Route exact path="/reviews/:id" component={ReviewPage} />
-            <Route exact path="/reviews/:id/edit" component={ReviewEditForm} />
-            <Route exact path="/reviews" component={() => <h1>Edit profile</h1>} />
+            <Route exact path="/signin" render={() => <SignInForm />} />
+            <Route exact path="/signup" render={() => <SignUpForm />} />
+            <Route exact path="/reviews/create" render={() => <ReviewCreateForm/>} />
+            <Route exact path="/reviews/:id" render={() => <ReviewPage/>} />
+            <Route exact path="/reviews/:id/edit" render={() => <ReviewEditForm/>} />
             <Route exact path="/profiles/:id" render={() => <ProfilePage />} />
             <Route
               exact
