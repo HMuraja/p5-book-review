@@ -75,7 +75,6 @@ function ReviewEditForm() {
     formData.append("book_category", book_category);
     formData.append("rating", rating);
     formData.append("review_body", review_body);
-
     if (imageInput?.current?.files[0]) {
       formData.append("image", imageInput.current.files[0]);
     }
