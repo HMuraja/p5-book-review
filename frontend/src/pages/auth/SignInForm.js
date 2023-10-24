@@ -53,8 +53,7 @@ function SignInForm () {
 
   return (
     <Row className={`${styles.Row} ${styles.Background}`}>
-      <Col></Col>
-      <Col className={`my-auto py-2 p-md-2`} sm={12} md={6} lg={4}>
+      <Col className={`my-auto py-2 p-md-2 mx-auto`} sm={12} md={6} lg={4}>
         <Container className={`${appStyles.Content} p-4 `}>
           <h1 className={styles.Header}>Sign In</h1>
 
@@ -115,8 +114,6 @@ function SignInForm () {
             Don't have an account yet? <span>Sign Up</span>
           </Link>
         </Container>
-      </Col>
-      <Col>
       </Col>
     </Row>
   );
