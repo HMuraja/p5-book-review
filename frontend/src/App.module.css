@@ -1,7 +1,11 @@
 .App {
-    font-family: 'Hind Vadodara', serif;
+    font-family: 'Athiti', serif;
     background-color: #F5F5F5;
     min-height: 100vh;
+}
+
+.BodyFont{
+    font-family: 'Alegreya', serif;
 }
   
 .Main {
