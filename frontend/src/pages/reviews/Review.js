@@ -165,14 +165,14 @@ const Review = (props) => {
         </Col>
 
       </Row>
-
+      {reviewPage &&
       <Row className= {styles.ReviewRow}>
         <Card.Body className={styles.ReviewBody}>
         <Card.Title className="font-weight-bold pb-2">Review:</Card.Title>
             
             {review_body && <Card.Text className={appstyles.BodyFont}>{review_body}</Card.Text>}
         </Card.Body>
-      </Row>
+      </Row>}
 
     </Card>
   );
