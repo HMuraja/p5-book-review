@@ -53,5 +53,5 @@ class ReviewSerializer(serializers.ModelSerializer):
             'profile_image', 'book_title', 'book_author', 'caption',
             'book_category', 'review_body', 'image',
             'rating', 'created_at', 'updated_at', 'comments_count',
-            'likes_count', 'like_id',
+            'likes_count', 'like_id', 'human_readable_category',
         ]

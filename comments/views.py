@@ -13,6 +13,7 @@ class CommentList(generics.ListCreateAPIView):
     serializer_class = CommentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Comment.objects.all()
+    filter_backends = [DjangoFilterBackend]
     filterset_fields = ['review']
 
     def perform_create(self, serializer):
