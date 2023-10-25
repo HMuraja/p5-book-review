@@ -82,7 +82,7 @@ const Review = (props) => {
   return (
     <Card className={styles.Review}>
 
-      <Row className= {styles.reviewRow}>
+      <Row className= {styles.ReviewRow}>
         <Card.Body>
             <Media className="align-items-center justify-content-between">
               <Link to={`/profiles/${profile_id}`} className="font-weight-bold text-dark">
@@ -102,7 +102,7 @@ const Review = (props) => {
         </Card.Body>
       </Row>
 
-      <Row className= {styles.reviewRow}>
+      <Row className= {styles.ReviewRow}>
 
         <Col className={styles.HideOnSmallScreen}>
             <Link to={`/reviews/${id}`}>
