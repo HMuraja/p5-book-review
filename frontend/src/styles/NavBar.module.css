@@ -5,9 +5,18 @@
   }
   
   .NavLink {
-    padding: 5px;
+    padding: 0 0 0 30px;
+    text-align: center;
   }
   
   .Active i {
     color: #ec5656;
   }
+
+  @media (max-width: 500px) {
+    .Logo{
+      max-height: 40px;
+
+    }
+    }
+

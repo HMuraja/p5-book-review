@@ -30,7 +30,7 @@ const NavBar = () => {
       activeClassName={styles.Active}
       to="/reviews/create"
     >
-      <i className="far fa-plus-square"></i>Add post
+      <i className="far fa-plus-square"></i><br/>Add Review
     </NavLink>
   );
 
@@ -41,7 +41,7 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/feed">
 
-        <i className="fas fa-stream"></i>Feed
+        <i className="fas fa-stream"></i><br/>Feed
 
       </NavLink>
 
@@ -49,13 +49,13 @@ const NavBar = () => {
         className={styles.NavLink}
         activeClassName={styles.Active}
         to="/liked">
-        <i className="fas fa-heart"></i>Liked
+        <i className="fas fa-heart"></i><br/>Liked
 
       </NavLink>
 
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
 
-        <i className="fas fa-sign-out-alt"></i>Sign out
+        <i className="fas fa-sign-out-alt"></i><br/>Sign Out
 
       </NavLink>
 
@@ -63,7 +63,7 @@ const NavBar = () => {
         className={styles.NavLink}
         to={`/profiles/${currentUser?.profile_id}`}>
           
-        <Avatar src={currentUser?.profile_image} text={currentUser?.username} height={40} />
+        <Avatar src={currentUser?.profile_image} text={currentUser?.username} height={40} navBar/>
 
       </NavLink>
     </>
@@ -77,14 +77,14 @@ const NavBar = () => {
           activeClassName={styles.Active}
           to="/signin"
         >
-          <i className="fas fa-sign-in-alt"></i>Sign in
+          <i className="fas fa-sign-in-alt"></i><br/>Sign in
         </NavLink>
         <NavLink
           to="/signup"
           className={styles.NavLink}
           activeClassName={styles.Active}
         >
-          <i className="fas fa-user-plus"></i>Sign up
+          <i className="fas fa-user-plus"></i><br/>Sign up
         </NavLink>
       </>
     );
@@ -96,7 +96,7 @@ const NavBar = () => {
             
             <NavLink to="/">
                 <Navbar.Brand >
-                    <img src={logo} alt="logo" height="60" />
+                    <img src={logo} alt="logo" height="60" className={styles.Logo}/>
                 </Navbar.Brand>
             </NavLink>
             {currentUser && addPostIcon}
@@ -114,7 +114,7 @@ const NavBar = () => {
                         className={styles.NavLink}
                         activeClassName={styles.Active}
                     >
-                        <i className="fas fa-home"></i> Home
+                        <i className="fas fa-home"></i><br/>Home
                     </NavLink>
 
                     {currentUser ? loggedInIcons : loggedOutIcons}
