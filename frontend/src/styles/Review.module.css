@@ -24,6 +24,12 @@ font-size: x-large;
 font-weight: bold;
 }
 
+.ImageSmallScreen{
+  max-height: 300px;
+  width:auto;
+  margin: 15px;
+}
+
 .ReviewCaption{
 padding-left: 15px !important;
 padding-right: 15px !important;
@@ -78,6 +84,14 @@ h5 {
   display: none;
 }
 
+.ReviewTitle{
+  padding: 10px 0 10px 0 !important;
+}
+
+.ReviewRow {
+  margin: 0;
+  padding: 5px 20px 5px 20px;
+}
 }
 
 @media (min-width: 992px) {

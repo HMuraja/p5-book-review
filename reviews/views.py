@@ -36,6 +36,7 @@ class ReviewList(generics.ListCreateAPIView):
         'owner__username',
         'book_title',
         'book_author',
+        'book_category',
     ]
     ordering_fields = [
         'likes_count',

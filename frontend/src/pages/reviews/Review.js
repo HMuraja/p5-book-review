@@ -106,13 +106,13 @@ const Review = (props) => {
 
         <Col className={styles.HideOnSmallScreen}>
             <Link to={`/reviews/${id}`}>
-                <Card.Img src={image} alt={book_title} />
+                <Card.Img src={image} alt={book_title}/>
             </Link>
         </Col>
 
         <Col className= {`text-muted ${styles.ReviewBackground}`}>
           <Link to={`/reviews/${id}`} className= {styles.HideOnLargeScreen}>
-              <Card.Img src={image} alt={book_title} />
+              <Card.Img src={image} alt={book_title}  className={styles.ImageSmallScreen}/>
           </Link>
           <Card.Body className= {styles.ReviewSummary}>
 

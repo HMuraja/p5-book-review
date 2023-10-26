@@ -46,7 +46,7 @@ function ReviewPage() {
       <Col className="py-2 p-0 p-lg-2" lg={8}>
         <PopularProfiles mobile />
         <Review {...review.results[0]} setReviews={setReview} reviewPage />
-        <Container className={appStyles.Content}>
+        <Container className={`px-3 ${appStyles.Content}`}>
           <h3 className="text-center mb-3 text-muted">Comments</h3>
           {currentUser ? (
             <CommentCreateForm
