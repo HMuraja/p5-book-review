@@ -12,31 +12,21 @@
 
 
 [View the live site here](https://read-rave-86b7234dccae.herokuapp.com/)
-
+                                
 </div>
 
-# ReadRave a Book Review Application
-A platform and a community for readers that allows you to review books and follow other readers for recommendations.
+## About
+ReadRave is a online platform and a community for readers that allows you to review books and follow other readers for recommendations.
 
-**PLASE NOTE!:** 
-That this app is still in development and contains bugs! Project has been submitted for review with Code Institute and while being reviewed it can't be updated. That being said feel free to look around and test the application in it's current form. 
+This application was made using primarly [React]() and [Django Rest Framework](). Django Rest Framework was used to build a backend API and frontend was build using React framework that consumes Django Rest Framework data. Both the backend and frontend are combined under one repository in this case. You can find the React Application inside the *fronend* folder of this repository.
 
-## Project Goal
-### Problem Statement
-Following problem statement was created for an imaginary user group:
+For further information feel free to keep reading or if you want to view the ready project click [here](https://read-rave-86b7234dccae.herokuapp.com/).
 
-I am **a user** trying to **find an application where I can share, read and follow conent about the books I like** but **I can't find one** because **other applications aren't specific enough** which makes me feel **like I can't share my passion for books with anyone**.
 
-### Fronted Designer
-This project was made to demonstarte advanced frontend skills. This section will explaint the essential parts that front end developer must keep in mind during development.
+## Project Goals
 
-## Fronted Designer Role
-Specialist Front-End developers are a important part of modern software teams, focusing on crafting user interfaces (UI) and optimizing user experiences (UX). They design and implement visually appealing interfaces, ensuring compatibility across different browsers and devices. While collaborating with Back-End developers, aim to integrate Front-End to the Back-End systems. They must stay aware of the user needs and optimize performance for faster loading times. Their expertise is pivotal in delivering engaging, user-friendly web applications.
-
-### Goals
-- Goal for this project is to provide a solution for the stated problem statement.
-- Build an online platform for sharing revioes on books review for sharing, reading and following book reviews and other readers.
-- Allow users to post reviews, read reviews and follow readers alike.
+- Build an online platform allowing users to share their interst on books.
+- Allows users to post reviews, read reviews and follow readers alike.
 - All visitors to the page should be able to view reviews.
 - Registered users should be able to share a review with a photo, review content and review score.
 - Registered users should be able to like and comment on reviews.
@@ -44,32 +34,102 @@ Specialist Front-End developers are a important part of modern software teams, f
 - Application should provide a simple intuitive interface that is easy to navigate.
 - Sites layout and colorscheme is pleasing and keeps users coming back to it.
 
-# User Experience UX
-## Wireframes
-A wireframe for the home page was made using Micorsoft Powerpoint.
+### Problem Statement
+Every project needs a problem statement and for this project the following statement was generated:
 
-![Front Page](https://github.com/HMuraja/p5-book-review/blob/main/readme/wireframes/wireframe-home-page-desktop.png)
+- "I am **a user** trying to **find an application where I can share, read and follow conent about the books I like** but **I can't find one** because **other applications aren't specific enough** which makes me feel **like I can't share my passion for books with anyone**."
 
-## Color Scheme
+### Frontend Developer Role 
+This project was made with an intent to demonstrate advanced frontend skills and few pricipals were followed in order to simulate the essential and important role that frontend developers play in a larger team:
+- Craft an user interfaces (UI) and optimize user experiences (UX). 
+- Design and implement visually appealing interface, ensuring compatibility across different browsers and devices.
+- Integrate Front-End to the Back-End systems. 
+- Stay aware of the user needs and optimize performance for faster loading times. 
+- Goal should to deliver engaging and user-friendly web applications.
 
+# Features
+<details>
+
+</details>
+
+## UX/UI - Design
+### Wireframes
+- Wireframes were made with Figma.
+- Wireframes were made to have quidelines for styling the pages, but not set rules for final product. 
+- Released project was broadly similar to the drafted wireframes.
+- Most notable changes to the wireframes was the review cards layout. 
+
+<details align=left>
+<summary>Home Page</summary>
+  <img src="readme/wireframes/wireframe-home-page-desktop.png" height=250>
+  <img src="readme/wireframes/wireframe-home-mobile.png" height=250>
+
+  *Wireframe for the home page on desktop and mobile*
+</details>
+
+<details align=left>
+<summary>Sign In and Sign Up page</summary>
+  
+  <img src="readme/wireframes/wireframe-signin-desktop.png" height=250>
+  <img src="readme/wireframes/wireframe-signin-mobile.png" height=250>
+
+  *Wireframe for the Sign In page on desktop and mobile.*
+
+<img src="readme/wireframes/wireframe-signup-desktop.png" height=250>
+<img src="readme/wireframes/wireframe-signup-mobile.png" height=250>
+
+  *Wireframe for the Sign Up page on desktop and mobile.*
+
+</details>
+
+<details align=left>
+<summary>Review Page</summary>
+  
+  <img src="readme/wireframes/wireframe-review-desktop.png" height=250>
+  <img src="readme/wireframes/wireframe-review-mobile.png" height=250>
+
+  *Wireframe for the Review page on desktop and mobile.*
+
+</details>
+
+<details align=left>
+<summary>Profile Page</summary>
+  
+  <img src="readme/wireframes/wireframe-profile-desktop.png" height=250>
+  <img src="readme/wireframes/wireframe-profile-mobile.png" height=250>
+
+  *Wireframe for the Review page on desktop and mobile.*
+</details>
+
+<details align=left>
+<summary>Creat/Edit/Delete Form</summary>
+  
+  <img src="readme/wireframes/wireframe-crudform-desktop.png" height=250>
+  <img src="readme/wireframes/wireframe-crudform-mobile.png" height=250>
+
+  *Wireframe for the Review page on desktop and mobile.*
+</details>
+
+### Color Scheme
+Following color were selected for the project:
 - Charcoal : Text, borders and details
 - Mint Green : Logo, Highlights
 - Coral Red : Logo, Highlights
 - White : Background and models
 - Smoke White/Grey : Background
 
-![Color Scheme for the Page](https://github.com/HMuraja/p5-book-review/blob/main/readme/color-schema.png)
+<img src="readme/color-schema.png" width="75%">
 
-## Backend Data Design
+## Component Design - FrontEnd/React
+To be updated!
+
+## Data Design - Backend/Django Rest Framework
 A design for data was drafted using [diagrams.net](https://app.diagrams.net/).
 
 The data diagram has 5 models user, profile, review, comment and like.
 <div align=center>
  <img src="readme/entity-relationship-diagram.png" width=65% align=center>
 </div>
-
-## Component Design - React, FrontEnd 
-To be updated!
 
 ## Agile Stragety
 Agile methodologies were applied in the development process of this project. Following principles were kept in mind during he process:
@@ -96,15 +156,15 @@ Following **9** user stories were implemented during the development of the back
 
 | Title                     | Story                                                                                                                                        | Priority               | Implemented |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
-| Profile Model | As a **user/viewer** As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data** | Must Have | No |
-| Review Model | As a **user** I can **create, edit and delete review** so that **I can share a review on books l have read** | Must Have | No          |
-| Comment Model | As a **user** I can **easily create a comment and edit/delete it if i want to ** so that **I discuss of any reviews I am interested of**| Must Have | No  |
-| View Comment Instance | As a **viewer** I can **easily see comments other have made to the review** so that **I can see what other people though about the review**| Should Have | No          |
-| Like Model | As a **user** I can **boost the reviews I think are good** so that **I can have an impact on the quality of the reviews posted**| Should Have | No          |
-| Like Feed | As a **user** I can **view the reviews I liked** so that **I can find easily any reviews that I liked** | Should Have | No          |
-| Follow Model | As a **user** I can **follow users that I like** so that **I modify my personal feed to include reviews from users I like** | Could Have | No          |
-| Authentication - Backend | As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.| Could Have | No          |
-| Profile Summary - Backend | As a **user/viewer** I can **view anyone's profile details** so that **I can see a summary of their interactions and activity**. | Could Have | No          |
+| Profile Model | As a **user/viewer** As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data** | Must Have | Yes |
+| Review Model | As a **user** I can **create, edit and delete review** so that **I can share a review on books l have read** | Must Have | Yes          |
+| Comment Model | As a **user** I can **easily create a comment and edit/delete it if i want to ** so that **I discuss of any reviews I am interested of**| Must Have | Yes  |
+| View Comment Instance | As a **viewer** I can **easily see comments other have made to the review** so that **I can see what other people though about the review**| Should Have | Yes          |
+| Like Model | As a **user** I can **boost the reviews I think are good** so that **I can have an impact on the quality of the reviews posted**| Should Have | Yes          |
+| Like Feed | As a **user** I can **view the reviews I liked** so that **I can find easily any reviews that I liked** | Should Have | Yes          |
+| Follow Model | As a **user** I can **follow users that I like** so that **I modify my personal feed to include reviews from users I like** | Could Have | Yes          |
+| Authentication - Backend | As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.| Could Have | Yes          |
+| Profile Summary - Backend | As a **user/viewer** I can **view anyone's profile details** so that **I can see a summary of their interactions and activity**. | Could Have | Yes          |
 
 
 ### FRONEND
@@ -115,8 +175,6 @@ Following **number** user stories were implemented during the development of the
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
 |  | |  |   |
 
-
-# Features
 
 ## Landing Page
 The home page or landing displays all the shared review cards. All reviews are displayed one after each other and 10 reviews are downloaded at the time, and if user scrolls down more reviews are displayed. Each review card displays an image of the reviewer, book/a placeholder, book title, and caption for the review. 
