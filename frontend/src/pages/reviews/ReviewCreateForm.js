@@ -199,7 +199,7 @@ function ReviewCreateForm() {
 
       <Button
         className={`${btnStyles.Button} ${btnStyles.Bright}`}
-        onClick={() => {}}
+        onClick={() => history.goBack()}
       >
         cancel
       </Button>
