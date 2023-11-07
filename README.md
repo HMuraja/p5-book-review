@@ -10,6 +10,7 @@
 ![Gitpod](https://img.shields.io/badge/gitpod-f06611.svg?style=for-the-badge&logo=gitpod&logoColor=white)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 
+<img src="readme/features/feature-signinpage-desktop.png" width="75%">
 
 [View the live site here](https://read-rave-86b7234dccae.herokuapp.com/)
                                 
@@ -46,11 +47,6 @@ This project was made with an intent to demonstrate advanced frontend skills and
 - Integrate Front-End to the Back-End systems. 
 - Stay aware of the user needs and optimize performance for faster loading times. 
 - Goal should to deliver engaging and user-friendly web applications.
-
-# Features
-<details>
-
-</details>
 
 ## UX/UI - Design
 ### Wireframes
@@ -120,9 +116,6 @@ Following color were selected for the project:
 
 <img src="readme/color-schema.png" width="75%">
 
-## Component Design - FrontEnd/React
-To be updated!
-
 ## Data Design - Backend/Django Rest Framework
 A design for data was drafted using [diagrams.net](https://app.diagrams.net/).
 
@@ -157,6 +150,8 @@ All together **number** user stories were drafted and Acceptance Criteria togeth
 ### Backend User Stories
 Following **9** user stories were implemented during the development of the backedn API. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant userstories with the **BackEnd tag**.
 
+<details><summary>Backend User Stories Table</summary>
+
 | Title                     | Story                                                                                                                                        | Priority               | Implemented |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
 | Profile Model | As a **user/viewer** As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data** | Must Have | Yes |
@@ -169,9 +164,13 @@ Following **9** user stories were implemented during the development of the back
 | Authentication - Backend | As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.| Could Have | Yes          |
 | Profile Summary - Backend | As a **user/viewer** I can **view anyone's profile details** so that **I can see a summary of their interactions and activity**. | Could Have | Yes          |
 
+</details>
 
 ### Frontend User Stories
 Following **11** user stories were implemented during the development of the fronend interface. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant userstories with the **frontend tag**.
+
+<details>
+<summary>Frontend User Stories Table</summary>
 
 | Title                     | Story                                                                                                                                        | Priority               | Implemented |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------- | ----------- |
@@ -187,55 +186,148 @@ Following **11** user stories were implemented during the development of the fro
 | Like Review | As a **logged in user** I can **like a review ** so that **I can encourage reviews I deem good or/and share my opinion on the posted review**. | Should Have | Yes          |
 | Read Review | As a **user** I can **easily access the reviews made by others** so that **I can read content made by other users**. | Must Have | Yes          |
 
+</details>
 
 ## Features
 ### Landing Page
-The home page or landing displays all the shared review cards. All reviews are displayed one after each other and 10 reviews are downloaded at the time, and if user scrolls down more reviews are displayed. Each review card displays an image of the reviewer, book/a placeholder, book title, and caption for the review. 
+The home page or the landing displays all the shared review cards. All reviews are displayed one after each other and 10 most recent reviews are downloaded at a time.Scrolls down will dowload more reviews. 
 
-On the right hand side(desktop) or on the top of post(mobile) 5 most popular profiles are displayed.
+Each review card displays an image of the reviewer, image of the book or a placeholder image, book title, book author, caption for the review and the number of stars given. On the bottom corner there is also a number of likes and comments each review has. 
 
-On the top of the posts you have a search bar enabling you to search reviews based on the title or author.
+On the right hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
+
+On the top of the posts you have a search bar enabling you to search reviews based on the title, book genre or author.
+
+<img src="readme/features/feature-homepage-desktop.png" height="300px">
+<img src="readme/features/feature-homepage-mobile.png" height="300px">
+
+*Homepage on desktop and mobile view.*
 
 ### Header/Navigation Menu
 App icon and the navigation items are placed on the top of the application. The navigation menu items are links to home, feed, profile and signup pages. Navigatio options available for the viewer are login, signup and home. Icon works as a link to home page. 
  
 On Medium sized screens and smaller the menu collapses into a dropdown menu.
- 
-### Review Page
-If the user clicks on the book image, they are lead on to the review's page where user can read the review and view comments. 
 
-If the logged in user is the owner of the review, a three dot icon appears and allows user to edit or delete the review.
+<img src="readme/features/feature-navmenu-desktop.png">
 
-On the bottom of the body the date of creation is detailed and the comment section starts. If user isn't logged in they may only view the the recipe details and any comments that other users have left.
+*Navigation menu desktop.*
 
-Any users logged can use a leave a comment form to leave a comment and edit or delete any comments left.
+<img src="readme/features/feature-navmenu-mobile.png">
 
-### Like
-If the user wants to like a review they have to log in and navigate to the review they like. On the review card they must click on the heart icon, in order to like it or unlike it. The page will refresh and the number of likes will be updated and the heart icon will change depending on if the user liked (solid colored heart icon) or unliked (outlined icon). 
+*Navigation menu mobile view.*
 
-### Login
+<img src="readme/features/feature-navmenu-drop-mobile.png">
 
-If the user has already signed up and are logged out from their account they can press *Login* button on the navigation menu and a login window will open up.
+*Navigation menu's drop down menu on mobile view.*
 
-User needs to enter username and their password and click login. The login form will be validated and an error message will display if the login isn't succesful.
+### Sign In
 
-Also, the navigation menu won't have items *Sign Up* or *Login* instead there are *Logout* and *Add Review* instead. 
+If the user has already signed up and are logged out from their account they can press *Sign In* button on the navigation menu and a sign in form will render.
+
+User needs to enter username and their password and click sign in. The form will be validated and an error message will display if the sign in isn't succesful.
+
+On succesfull login user will be led to the home page, and navigation mneu will be updated dsiplaying the profile of the logged in user.
+
+<img src="readme/features/feature-signinpage-desktop.png" height="400px">
+<img src="readme/features/feature-signin-mobile.png" height="400px">
+
+*Sign in page for desktop and mobile*
+
+<img src="readme/features/feature-signin-form-error-nomatch.png" height="300px">
+
+*Sign in error.*
 
 ### Signup
 
-If the user wan't to carry out any other functionalities on the site other than viewing data, they must create a account to do that. They can do it by clicking on the signup button on the navigation menu. This opens a signup form that the new user must fill.
+If the user wants more customized experience of the applicatiopn or want's to share content they must sign up. User opens up the sign up form, by clicking the sign up link/button on the navigation menu or the link on the sign in form. 
 
-### Logout
+Sign up form requires user to choose a username and password. Password needs to be entered twice. If passwords entered don't match or the passowrd is too simple an error message will display. 
 
-Once logged in simply click log out from the top of the navbar.
+Succsesfull sign up will lead the user to the sign in page. 
 
-### Add Reviw
+<img src="readme/features/feature-signuppage-desktop.png" height="400px">
+<img src="readme/features/feature-signup-mobile.png" height="400px">
+
+*Sign up page for desktop and mobile screen*
+
+<img src="readme/features/feature-signup-form.png" height="300px">
+<img src="readme/features/feature-signup-form-error-common.png" height="300px">
+<img src="readme/features/feature-signup-form-nomach-error.png" height="300px">
+
+*Sign up form, too common password, no mach error.*
+
+### Sign Out
+
+Once logged in, a sign out button is visible on the navigation menu on the top. Clickign the button will return the user to the home page.
+
+<img src="readme/features/feature-signout-btn.png">
+
+### Review Page
+If the user clicks on the book image, they are lead on to the review's page where user can read the review and view comments. 
+
+<img src="readme/features/feature-reviewpage.png" height="500px">
+
+*Navigation menu's drop down menu on mobile view.*
+
+### Add Review
 
 If user wants to create a recipe they must click on the button at the navigation menu or the navigation link stating *Add Review*.
 
-Clicking the link or the button should open the page with the "Add a Review"-form. All the fields, title, author, caption, content and score, are mandatory. If the user won't select an image it will be replaced with a placeholder image.
+Clicking the link or the button should open the page with the "Add a Review"-form. All the fields, title, author, caption, content and score, are mandatory. If the user won't select an image it will be replaced with a placeholder image. Cathegory is seleceted from a list opened by dropdown menu. 
+
+Form will be validated before being sent to the database. If data is not completed correctly an error message will display under the respective fields.
 
 A succesful submission will take the user to the review page.
+
+<div align="center">
+<img src="readme/features/feature-createreview-btn.png">
+
+*Create review button.*
+
+<img src="readme/features/feature-createreview-desktop.png" height="300px">
+<img src="readme/features/feature-createreview-mobile.png" height="300px">
+
+*Create review form on desktop and on mobile screen.*
+
+<img src="readme/features/feature-createreview-dropdown.png" height="300px">
+<img src="readme/features/feature-createreviewform-completed.png" height="300px">
+
+*Dropdown menu and a completed review form*
+
+<img src="readme/features/feature-createreview-err-image.png" width="300px">
+
+<img src="readme/features/feature-createreviewform-unfilled.png" width="300px">
+
+*Error messages for create form*
+
+ <img src="readme/features/feature-createreview-endpage.png" width="400px">
+
+*Review page of the newly created review.*
+
+</div>
+
+### Comment
+
+On the bottom of the review page are the comments
+
+### Profile
+
+### Like
+If the user wants to like a review they have to sign in and navigate to the review they like. On the review card they must click on the heart icon, in order to like it or unlike it. The page will refresh and the number of likes will be updated and the heart icon will change depending on if the user liked (solid colored heart icon) or unliked (outlined icon). 
+
+An error message will display if a signed in user attempts to like their own review. 
+
+<img src="readme/features/feature-like-before.png" height="150px">
+<img src="readme/features/feature-like-after.png" height="150px">
+<img src="readme/features/feature-like-error-nolike.png" height="150px">
+
+*Like button before, after and error message if attempting to like own review.*
+
+### Follow
+
+### Feed
+
+### Liked
 
 ### Edit Review
 Logged in review owner has the option to edit review on the review detail page. 
@@ -354,16 +446,73 @@ In addition, responsivity and code was tested manually.
 The final product was tested to confirm all acceptance criteria on the user stories, labelled as Backend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criterias were fullfilled.
 
 <details>
+<summary>USER STORY: Authentication</summary>
+
+As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.
+
+- *Acceptance Criteria*
+    - [x] **Acceptance Criteria 1:** An instance of user and profile model class are created when user signs up.
+    - [x] **Acceptance Criteria 1:** Users id is automatically added to any of the instances they create.
+    - [x] **Acceptance Criteria 1:** Users can't create instances without being logged in. 
+- **How the Criteria was tested**:
+    - User can login using the login button on the Django Rest Framework (DRF) interface. 
+    - User id is used in review, follow, like and comment instances they create, to identify the creator and they can't create instaces without being logged in.  
+</details>
+
+<details>
+<summary>USER STORY: Profile Model</summary>
+
+As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data**
+
+- *Acceptance Criteria*
+    - [x] **Acceptance Criteria 1:** A profile is automatically created and saved after user is created.
+    - [x]  **Acceptance Criteria 2:** A placeholder image is added initially when profile is created.
+    - [x] **Acceptance Criteria 3:** Profiles can be sorted based onn filters and order parameters. 
+    - [x] **Acceptance Criteria 4:** Profile has a description field that the user can add.
+    - [x] **Acceptance Criteria 5:** User can edit username, password and profile image to their profile.
+- **How the Criteria was tested**:
+    - In */profiles* url all profile instances are listed.
+    - If user signs up a profile instance is automatically created. 
+    - A placeholder image is added to to the profile instance once created.
+    - User can edit the username, password and swicth the profile photo if logged in as the owner of the profile.
+    - User can add a personalized description text for their profile.
+    - Profile instances can be filtered according all profiles followed by selected profile and profiles that are follow the selected profile.
+    - Profile instances can be listed in order based on review counts, follower counts, following counts most recently followed profiles and most recently following profiles.
+
+</details>
+
+<details>
+<summary>USER STORY: Profile Summary </summary>
+
+As a **user/viewer** I can **view anyone's profile details** so that **I can see a summary of their interactions and activity**.
+
+- *Acceptance Criteria*
+    - [x] **Acceptance Criteria 1:** List all reviews for the specified user profile. 
+    - [x] **Acceptance Criteria 2:** List all the followed ids for the specified user profile.
+    - [x] **Acceptance Criteria 3:** List all the follower ids for the specified user profile.
+- **How the Criteria was tested**:
+    - In */reviews/* results could be filtered according to the user profile that has to be the same as the review's *owner*
+    - In */profiles/* all the profiles followed can be listed for the selected profile using the filters on the DRF UI. 
+    - In */profiles/* all the profiles followers can be listed for the selected profile using the filters on the DRF UI. 
+</details>
+
+<details>
 <summary>USER STORY: View Comment Instances</summary>
 <div>As a **viewer** I can **easily see comments other have made to the review** so that **I can see what other people though about the review**.</div>
 
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** List all comment instances.
-    - [x]  **Acceptance Criteria 2:** Filter comment instances based on the review.
+    - [x] **Acceptance Criteria 2:** Filter comment instances based on the review.
+- **How the Criteria was tested**:
+    - Extension */comments/* was added to the root url. 
+    - It was confirmed that all comment instances were visible. 
+    - The filtering functionality was tested by selecting a review book title name from the filters rendered by the DRF UI. 
+    - The filtering worked as expected and displayed only the instances for the review selected. 
 
 </details>
+
 <details>
-<summary>USER STORY: API and Front End Communication - Must Have</summary>
+<summary>USER STORY: API and Frontend Communication</summary>
 
 As a **user** I can **easily access data saved on the application** so that **I can interact with others and the application seamlessly.**
 
@@ -371,7 +520,12 @@ As a **user** I can **easily access data saved on the application** so that **I 
     - [x] **Acceptance Criteria 1:** Build an API that generates JSON data for the front end to consume.
     - [x]  **Acceptance Criteria 2:** Front end is able to send data to the API to consume. 
     - [x] **Acceptance Criteria 3:** Application features behave smoothly and easy to understand manner.
+- **How the Criteria was tested**:
+    - Once API was deployed, it was confimed that the all extension for the API worked and was formatted in legible JSON format. 
+    - Once Frontend was connected it was confimred it was possible to send send data to API and it was able to store it. New review, comment, profile, like and follow instances all appeared into the database and could be viewed in the JSON files. 
+    - The ReadRave was tested as whole  and all features behaved smoothly being able to send, create, edit and delete data where applicable as expected. 
 </details>
+
 <details>
 <summary>USER STORY: Like Feed</summary>
 As a **user** I can **view the reviews I liked** so that **I can find easily any reviews that I liked**.
@@ -379,15 +533,26 @@ As a **user** I can **view the reviews I liked** so that **I can find easily any
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** All like instances are listed.
     - [x]  **Acceptance Criteria 2:** Like instance list can be filtered according to the owner of the instance.
+- **How the Criteria was tested**:
+    - With the extension */likes* added to the root url, all like instances were listed.
+    - The filters are available, and offer option for filtering the likes based on the likes owner value.
+    - When filter is selected only the like instances with the selected owner value are displayed. 
 </details>
+
 <details>
 <summary>USER STORY: Like Model</summary>
 As a **user** I can **boost the reviews I think are good** so that **I can have an impact on the quality of the reviews posted**
 
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** Logged in user can create and delete an like instance
-    - [x]  **Acceptance Criteria 2:** Creating an instance automatically adds the liked review id to the like field.
+    - [x] **Acceptance Criteria 2:** Creating an instance automatically adds the liked review id to the like field.
+- **How the Criteria was tested**:
+    - The create form is available only when user is logged.
+    - Delete button is available and works for the instances in */likes/[like_id]* url for the logged in users. 
+    - Logged in user can create an instance by choosing the liked review id from the list. 
+    - The created instance appears on the "/liked" url list.
 </details>
+
 <details>
 <summary>USER STORY: Follow Model</summary>
 
@@ -397,52 +562,14 @@ As a **user** I can **follow users that I like** so that **I modify my personal 
     - [x] **Acceptance Criteria 1:** Followed field and following fields of the instance should be unique pairs in order to avoid duplicate follows from one person.
     - [x]  **Acceptance Criteria 2:** Users can easily create follow instance and delete it.
     - [x] **Acceptance Criteria 3:** User id is automatically added to the following field in creation.
-    - [x] **Acceptance Criteria 4:** All follow ids can be listed and filtered according to the following field user id.
+- **How the Criteria was tested**:
+    - In */followers/* url all follow instances are listed.
+    - Create and delete functionalities are available only to the users logged in. 
+    - Logged in user can create through form and delete follow instance when navigating to the instace they have authored (/followers/[follow_id]/).
+    - A new instance is automatically added to the listed instances of follows and the user ID is automatically added to the instance, not requiring the user to specify it.
+    - User can't follow twice and receives a 404 message "possible duplicate" when trying to do so.
 </details>
-<details>
-<summary>USER STORY: Profile Summary - Backend</summary>
 
-As a **user/viewer** I can **view anyone's profile details** so that **I can see a summary of their interactions and activity**.
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** List all reviews for the specified user profile. 
-    - [x] **Acceptance Criteria 2:** List all the followed ids for the specified user profile.
-    - [x] **Acceptance Criteria 3:** List all the follower ids for the specified user profile.
-</details>
-<details>
-<summary>USER STORY: Authentication - Backend</summary>
-
-As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** An instance of user and profile model class are created when user signs up.
-    - [x] **Acceptance Criteria 1:** Users id is automatically added to any of the instances they create.
-    - [x] **Acceptance Criteria 1:** Users can't create instances without being logged in. 
-</details>
-<details>
-<summary>USER STORY: Profile Model</summary>
-
-As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data**
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** A profile is automatically created and saved after user logs in.
-    - [x]  **Acceptance Criteria 2:** A placeholder image is added initially when profile is created.
-    - [x] **Acceptance Criteria 3:** Profile summarizes all the profiles followed, number of liked reviews and made number of reviews made.
-    - [x] **Acceptance Criteria 4:** Profile has a description field that the user can add.
-    - [x] **Acceptance Criteria 4:** User can edit username, password and profile image to their profile.
-</details>
-<details>
-<summary>USER STORY: Profile Model</summary>
-
-As a **user** I can **view, edit and delete my profile** so that **I can personalize my account and view my data**
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** A profile is automatically created and saved after user logs in.
-    - [x]  **Acceptance Criteria 2:** A placeholder image is added initially when profile is created.
-    - [x] **Acceptance Criteria 3:** Profile summarizes all the profiles followed, number of liked reviews and made number of reviews made.
-    - [x] **Acceptance Criteria 4:** Profile has a description field that the user can add.
-    - [x] **Acceptance Criteria 4:** User can edit username, password and profile image to their profile.
-</details>
 <details>
 <summary>USER STORY: Review Model</summary>
 
@@ -451,6 +578,13 @@ As a **user** I can **create, edit and delete review** so that **I can share a r
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** User can create and delete a review.
     - [x]  **Acceptance Criteria 2:** User can edit the title, caption, content and image.
+
+- **How the Criteria was tested**:
+    - In */reviews/* url all follow instances are listed.
+    - Create and delete functionalities are available only to the users logged in.
+    - User can edit title, caption, content and image if they are logged in and the owner of the review in */reviews/[review id]/* url.
+    - Editing form or delete button is not available for users not logged in not owner for the review.
+
 </details>
 <details>
 <summary>USER STORY: Comment Model</summary>
@@ -459,54 +593,40 @@ As a **user** I can **easily create a comment and edit/delete it if i want to **
 
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** User can add a comment to a review they like.
-    - [x]  **Acceptance Criteria 2:** Review id is added automatically to the comment instance.
+    - [x] **Acceptance Criteria 2:** Review id is added automatically to the comment instance.
     - [x] **Acceptance Criteria 3:** User can edit or delete an comment instance they made.
-</details>
-<details>
-<summary>USER STORY: Follow Model</summary>
 
-As a **user** I can **follow users that I like** so that **I modify my personal feed to include reviews from users I like**
+- **How the Criteria was tested**:
+    - In */comments/* url logged in users can leave a comment. 
+    - Reviews id is automatically added to the instance.
+    - In */comment/[comment id]/* url editing form and delete button are available for the user if they are the owner of the instance. 
+    - Editing and deleting functionalities work.
 
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** Followed field and following fields of the instance should be unique pairs in order to avoid duplicate follows from one person.
-    - [x]  **Acceptance Criteria 2:** Users can easily create follow instance and delete it.
-    - [x] **Acceptance Criteria 3:** User id is automatically added to the following field in creation.
-    - [x] **Acceptance Criteria 4:** All follow ids can be listed and filtered according to the following field user id.
-</details>
-<details>
-<summary>USER STORY: Like Feed</summary>
-
-As a **user** I can **view the reviews I liked** so that **I can find easily any reviews that I liked**.
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** All like instances are listed.
-    - [x]  **Acceptance Criteria 2:** Like instance list can be filtered according to the owner of the instance.
-</details>
-<details>
-<summary>USER STORY: Like Model</summary>
-
-As a **user** I can **boost the reviews I think are good** so that **I can have an impact on the quality of the reviews posted**
-
-- *Acceptance Criteria*
-    - [x] **Acceptance Criteria 1:** Logged in user can create and delete an like instance
-    - [x]  **Acceptance Criteria 2:** Creating an instance automatically adds the liked review id to the like field.
 </details>
 
 ### Frontend User Stories - Test
 The final product was tested to confirm all acceptance criteria on the user stories, labelled as frontend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criterias were fullfilled.
 
 <details>
-<summary>USER STORY: Following - Could Have</summary>
+<summary>USER STORY: Following </summary>
 
 As a **logged in user** I can **follow other users** so that **I can receive personalized reviews and encourage the followed user to stay active**.
 
 - *Acceptance Criteria*::
-    - [x] **Acceptance Criteria 1:** An easy button is accessible for users to follow and follow. 
+    - [x] **Acceptance Criteria 1:** An easy button is accessible for users to follow and unfollow. 
     - [x]  **Acceptance Criteria 2:** Users have an overview of followed profiles in their own profile. 
-    - [x] **Acceptance Criteria 3:** Users personal feed has reviews only from the followed users..
+    - [x] **Acceptance Criteria 3:** Users personal feed has reviews only from the followed users.
+- **How the Criteria was tested**:
+    - A button is next to profiles listed on the most popular profiles and on the profile page.
+    - Button appearance is consistently similar across the app. 
+    - On users own profile, they can see a summary of the total profiles followed.
+    - Logged in users can see on the their feed only prosts from the users they have followed.
+    - Clicking the follow button will changed it's appearance and change into "followed" text, clearly indicating of succesful action. 
+    - Clicking the button again will simply unfollow and the profile and change the appearance of the button back to "follow" text and color. 
+
 </details>
 <details>
-<summary>USER STORY: Navigation -Must Have</summary>
+<summary>USER STORY: Navigation</summary>
 
 As a **user** I can **view a navbar from every page** so that **I can navigate easily between pages**.
 
@@ -515,34 +635,59 @@ As a **user** I can **view a navbar from every page** so that **I can navigate e
     - [x] **Acceptance Criteria 2:** The navbar collapses on mobile view.
     - [x] **Acceptance Criteria 3:** Home, log in and sign up links are the only visible  links for users that are **not** logged in.
     - [x] **Acceptance Criteria 4:** Home, log out, add review, my profile and liked links are visible  only for the logged in users.
+
+- **How the Criteria was tested**:
+    - Navigation bar is fixed to the top of the application and visible at all times.
+    - From the width of 767 px and down navigation items appart from create review and logo collaps inside a menu icon. Clicking the menu items and outside of menu successfully close the menu.
+    - If the user is not logged only menu items avaialable are home, sign in and sign up. 
+    - When user is logged in the menu items change into add review, home, feed, liked, sign out and user profile.
+    - All links work and lead to the features and function intended.     
+    
 </details>
 <details>
-<summary>USER STORY: Authentication - MustHave</summary>
+<summary>USER STORY: Authentication </summary>
     
 As a **user** I can **easily login and logout** so that **I can access the content and be recognized as a logged in user by the application**.
 
 - *Acceptance Criteria*::
     - [x] **Acceptance Criteria 1:** Users are required to log in before accessing any of the CRUD functionalities, apart from signing up.
     - [x] **Acceptance Criteria 2:** Logged in user can access all the features of the application once logged in.
-    - [x] **Acceptance Criteria 3:** User who hasn't logged in can't access urls that they aren't authorized to and are redirected to the login page.
+    - [x] **Acceptance Criteria 3:** User who hasn't logged in can't access urls that they aren't authorized to and are redirected to the home page.
+- **How the Criteria was tested**:
+    - Users that aren't logged in could only view profiles and reviews, they were also able to sign up and sign in.
+    - Signed in users can access all the CRUD functionalities as long as the data they want to modify is created by them.
+    - If users that were not logged in attemted to access a functionality that requires authentication, like creating a new review they are redirected back to the home page. 
 </details>
 <details>
-<summary>USER STORY: Routing - Must Have</summary>
+<summary>USER STORY: Routing </summary>
 
 As a **user** I can **navigate through pages quickly** so that **I can view content seamlessly without page refresh**.
 
 - *Acceptance Criteria*:
     - [x] **Acceptance Criteria 1: When any link on the pages is clicked only the relevant components will refresh.
+
+- **How the Criteria was tested**:
+    - When any link is clicked on the application they will lead to the intended component being rendered. 
+  
 </details>
 <details>
 <summary>USER STORY: Create Reviews</summary>
 
-As a **user** I can **easily make a review or edit a review** so that **I can share my thought on my read books**.
+As a **user** I can **easily make a review or edit a review** so that **I can share my thought on books I have read**.
 
 - *Acceptance Criteria*::
     - [x] **Acceptance Criteria 1:** Function for creating reviews is accessible everywhere for the logged in user.
     - [x]  **Acceptance Criteria 2:** Creating review is easy and simple process. 
     - [x] **Acceptance Criteria 3:** Only the owner of the review can edit or delete the review.
+- **How the Criteria was tested**:
+    - The create reviews link is only visible only for the users that are logged in. 
+    - Only the users logged in can access the create review form. 
+    - Create review form is easy to fill and each field is clearly labelled.
+    - Not filling the form correctly will provide an error messages and prevent user from creating a new instance. 
+    - Error messages describe clearly what user needs to fix in order to submit the review successfully. 
+    - When the owner of the review logged in they were able to click the revie wthey created and a more button is visible for them on the review page, they are able to click on it get a menu with two icons, one for editing and one for deleting. 
+    - Clciking edit rendered an edit review prociding similar form than creation for allowing user to edit the details successfully.
+    - Deletion deleted the review successfully. 
 </details>
 <details>
 <summary>USER STORY: User Profile View</summary>
@@ -551,7 +696,15 @@ As a **user** I can **view other user profiles** so that **I can find and follow
 
 - *Acceptance Criteria*::
     - [x] **Acceptance Criteria 1:** User profiles are accessible for all users. 
-    - [x]  **Acceptance Criteria 2:** User profiles summarize the profile offer meaningful data of the selected user. 
+    - [x]  **Acceptance Criteria 2:** User profiles summarize the profile offer meaningful data of the selected user.
+
+- **How the Criteria was tested**:
+    - Profile pages were accessible for everyone regardless if they were signed in or not. 
+    - Clikcing the profile either on the review card, popular profiles list or if logged in on the my profile link on the main menu took the user to the profile page.
+    - Profile page summarized profile information into easy to read UI, displaying the profile image, name, reviews number, followed profile number and follower profile number.
+    - All the numbers updated successfully if the data changed. 
+    - If profile is viewed by another user and they are logged in a follow button is available. 
+    - On the profile page all the reviews made by the user are displayed as a list. 
 </details>
 <details>
 <summary>USER STORY: Edit profile Should Have</summary>
@@ -560,20 +713,31 @@ As a **user** I can **view, edit or delete my profile** so that **I have full co
 
 - *Acceptance Criteria*::
     - [x] **Acceptance Criteria 1:** My profile is easy for the user to access. 
-    - [x]  **Acceptance Criteria 2:** Editing and deleting the profile is easy and straight forward
+    - [x]  **Acceptance Criteria 2:** Editing the profile is easy and straight forward
     - [x] **Acceptance Criteria 3:** User can personalize the profile to reflect them.
-    - [x]  **Acceptance Criteria 3:** Profile displays clear summary of the user details. 
+    - [x]  **Acceptance Criteria 3:** Profile displays clear summary of the user details.
+- **How the Criteria was tested**:
+    - Once user was logged the naviagtion menu shows the profile name and picture for the logged in user. 
+    - Clicking onto this lead the user to their profile page and a clear edit logo is visible on the corner of the profile page. 
+    - Clicking on the logo opened successfully optin sfor editing: edit, change username, change password.
+    - Editing rendered an easy to read form with the possibility to update the profile name and image. Editing the the details successfully update the profile data. 
+    - Updating the user name or password, render a simple form. Submitting the chnages successfully changed the user data. 
 </details>
 <details>
-<summary>USER STORY: View Comments Should Have</summary>
+<summary>USER STORY: View Comments </summary>
 
 As a **a user** I can **read comments** so that **I can see what is the reception for the review**.
 
 - *Acceptance Criteria*::
     - [x] **Acceptance Criteria 1:** Any user logged in or not can view comments.
+
+- **How the Criteria was tested**:
+    - Comments for the review are rendered successfully when clciking on the review interested at. 
+    - If no comments were available no comments were displayed under the comments header.
+
 </details>
 <details>
-<summary>USER STORY: Leave a comment- Should Have</summary>
+<summary>USER STORY: Leave a comment</summary>
 
 
 As a **logged in user** I can **leave and edit comments** so that **I can share my point of view on the reviews.*.
@@ -583,6 +747,16 @@ As a **logged in user** I can **leave and edit comments** so that **I can share 
     - [x]  **Acceptance Criteria 2:** Leaving comments is easy and straight forward.
     - [x] **Acceptance Criteria 3:** Editing or deleting comments is easy and straightforward.
     - [x] **Acceptance Criteria :** Display edit/delete option only for the logged in users.
+- **How the Criteria was tested**:
+    - When user was logged in a review form was rendered under the review on the review page, if user is not logged in comment form is absent and not accessible.
+    - Leave a comment form was easy and straighforward to fill, field for the text and submit for creating the comment instance. 
+    - Clicking submit generated comment instance successfully and the comment was visbile underneath the form. 
+    - All comments left state clearly the name of the owner, date created and the comment itself. 
+    - Edit icon was clearly visible for the logged in owner of the comment, and cliking the icon opens a menu with two option edit and delete. 
+    - Editing opens a edit form, with simple edit field with the text and submit button. Submit successfully upated the comment. 
+    - Clicking delete successfully deleted the comment.
+    - Also the comment counter on each review was updated once a comment was edited or deleted.
+    
 </details>
 <details>
 <summary>USER STORY: Like reviews</summary>
@@ -590,10 +764,17 @@ As a **logged in user** I can **leave and edit comments** so that **I can share 
 As a **logged in user** I can **like a review ** so that **I can encourage reviews I deem good or/and share my opinion on the posted review**.
 
 - *Acceptance Criteria*::
-    - [x] **Acceptance Criteria 1:** A easily visible like button is present in all reviews.
+    - [x] **Acceptance Criteria 1:** An easily visible like button is present in all reviews.
     - [x]  **Acceptance Criteria 2:** In the review details user can like/unlike a post by just clicking the hart icon present.
     - [x] **Acceptance Criteria 3:** A number of total likes is visible on the review.
-    - [x] **Acceptance Criteria :** Indicate to the user if they have already liked a post.
+    - [x] **Acceptance Criteria 4:** Indicate to the user if they have already liked a post.
+- **How the Criteria was tested**:
+    - On each review there was a clear heart with a like counter visible, both in review list and review page. 
+    - Clicking the like heart on the list or on the review page generated a like instance, only if user was logged in and not owner of the review.
+    - If logged in user attempted to like their own review they receive message *"You can't like your own review!"*
+    -  Clicking the like icon as logged in user generated an number increase and heart icon change outline to solid red heart. 
+    - Clikcing again as logged in user deleted instance and changed heart from solid to outline only and decreaced the number. 
+    - Liked review appeared on the liked page for the logged in user, and similarly disapeard when unliked. 
 </details>
 <details>
 <summary>USER STORY: Read Reviews</summary>
@@ -607,9 +788,15 @@ As a **user** I can **easily access the reviews made by others** so that **I can
     - [x] **Acceptance Criteria 4:** Users easily find the reviews they are interested of. 
     - [x] **Acceptance Criteria 5:** Listed reviews display an easy to disgest summary of the review.
 
+- **How the Criteria was tested**:
+    - Home page with all the reviews was available to all users regardless of sign in status. 
+    - Any user can also access the review details and review page by clicking the review interested in. 
+    - The review page detailed all the relevant information for the viewer in readable format and organized format.
+    - Listed reviews detailed all the same information about the review as the review page, apart from the review text that is available only on the review page that they can access by clciking on the reviews listed. 
+
 </details>
 
-### Responsivness
+### Responsivenes
 The website was tested on diffrent screensizes using the Google Developer Tools to ensure user interface was responding accordingly on different screensizes. 
 
 All features of the ReadRave website were tested on 4 different screensizes:
@@ -620,7 +807,7 @@ All features of the ReadRave website were tested on 4 different screensizes:
 - Average Laptop Screensize (1366 x 768 px)
 
 Website interface responded well on all the screensizes tested above. All text was readable and content wasn't shifting or covered when changing screensizes. All links, buttons and forms or other actionable features were easy to see and use in all screen sizes.
-# Code Validation
+## Code Validation
 ### Python Code Validation
 All Django Rest/API files were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/). No errors were detected. 
 
@@ -636,7 +823,7 @@ ReadRave was ran through [w3 CSS Validator](https://jigsaw.w3.org/css-validator/
 </div>
 
 ### 
-# Deployment
+## Deployment
 ### API Deployment
 Once API was built it was deployed in Heroku.
 
@@ -648,69 +835,96 @@ Once API was built it was deployed in Heroku.
 
         os.environ['DATABASE_URL'] = '<your PostgreSQL URL goes here, starts with "postgres://...">'
 
-5. In the IDE, dj_database_url and psycopg2 were installed as they are needed to connect the external database. Installation was carried out via the IDE termnial whith the following command:
+3. In the IDE, dj_database_url and psycopg2 were installed as they are needed to connect the external database. Installation was carried out via the IDE termnial whith the following command:
+
         pip3 install dj_database_url==0.5.0 psycopg2
-6. Installed libraries were imported to the rr_drf settings.py file:
+
+4. Installed libraries were imported to the rr_drf settings.py file:
+
         import os
         import dj_database_url
-7. Next update the DATABASE section with the following:
+
+5. Next update the DATABASE section with the following:
         
-    if 'DEV' in os.environ:
-        DATABASES = {
-            'default': {
-                'ENGINE': 'django.db.backends.sqlite3',
-                'NAME': BASE_DIR / 'db.sqlite3',
+        if 'DEV' in os.environ:
+            DATABASES = {
+                'default': {
+                    'ENGINE': 'django.db.backends.sqlite3',
+                    'NAME': BASE_DIR / 'db.sqlite3',
+                }
             }
-        }
-    else:
-        DATABASES = {
-            'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-        }
-8. In env.py environment variable'DEV' was commented out:
-    # os.environ['DEV'] = '1'
-9. All the database models were migrated to the new database:
-    python3 manage.py migrate
-10. New superuser was created and a applicaple superuser and password was created:
-    python3 manage.py createsuperuser
-11. The second part of the prepartion project was prepared for deployment in Heroku. 
-12. Using the IDE workspace terminal gunicorn was installed:
-     pip3 install gunicorn django-cors-headers
-14. A new file called "Procfile" was created, with the following commands inside it:
-     release: python manage.py makemigrations && python manage.py migrate
-     web: gunicorn drf_api.wsgi
-15. In rr_drf folders settins.py ALLOWED_HOST variable was updated as follows:
-     ALLOWED_HOSTS = ['localhost', 'read-rave.herokuapp.com']
-16. INSTALLED_APPS was updated as follows:
-    INSTALLED_APPS = [
-    ...
-    'dj_rest_auth.registration',
-    'corsheaders',
-    ...
-    ]
-17. The 'corsheaders.middleware.CorsMiddleware' was added as the first item on the MIDDLEWARE-list: 
-    MIDDLEWARE = [
-        'corsheaders.middleware.CorsMiddleware',
+        else:
+            DATABASES = {
+                'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+            }
+    
+6. In env.py environment variable'DEV' was commented out.
+
+7. All the database models were migrated to the new database:
+
+        python3 manage.py migrate
+
+8. New superuser was created and a applicaple superuser and password was created:
+
+        python3 manage.py createsuperuser
+
+9. Then the changes needed to be made for deployment to be possible in Heroku. 
+10. Using the IDE workspace terminal gunicorn was installed:
+
+        pip3 install gunicorn django-cors-headers
+
+11. A new file called "Procfile" was created, with the following commands inside it:
+
+        release: python manage.py makemigrations && python manage.py migrate
+        web: gunicorn drf_api.wsgi
+
+12. In rr_drf folders settins.py ALLOWED_HOST variable was updated as follows(The url was updated later to the heroku app url that will be created in the following steps):
+
+        ALLOWED_HOSTS = ['localhost', '/']
+
+13. INSTALLED_APPS was updated as follows:
+
+        INSTALLED_APPS = [
         ...
-    ]
-18. Added an ALLOWED_ORIGINS variable right under the MIDDLEWARE list:
-    CORS_ALLOWED_ORIGINS = [
-         os.environ.get('CLIENT_ORIGIN'),
-    ]
-19. Added  CORS_ALLOW_CREDENTIALS = True right under ALLOWED_ORIGINS so that cookie sending is enabled.
-    CORS_ALLOW_CREDENTIALS = True
+        'dj_rest_auth.registration',
+        'corsheaders',
+        ...
+        ]
 
-20. Switched JWT_AUTH_SAMESITE to variable to 'None':
+14. The 'corsheaders.middleware.CorsMiddleware' was added as the first item on the MIDDLEWARE-list:
 
-     JWT_AUTH_SAMESITE = 'None
-21. Changed DEBUG variable:
-     DEBUG = 'DEV' in os.environ
+        MIDDLEWARE = [
+            'corsheaders.middleware.CorsMiddleware',
+            ...
+        ]
 
-22. Requirements.txt was updated:
-      pip freeze --local > requirements.txt
+15. Added an ALLOWED_ORIGINS variable right under the MIDDLEWARE list:
 
-4. In Heroku a new app called 'read-rave' was created. 
+        CORS_ALLOWED_ORIGINS = [
+            os.environ.get('CLIENT_ORIGIN'),
+        ]
 
-5. In *settings* of the created app Config Vars key value pairs were set to be as displayed below:
+16. Added  CORS_ALLOW_CREDENTIALS = True right under ALLOWED_ORIGINS so that cookie sending is enabled.¨
+
+        CORS_ALLOW_CREDENTIALS = True
+
+17. Switched JWT_AUTH_SAMESITE to variable to 'None':
+
+        JWT_AUTH_SAMESITE = 'None
+
+18. Changed DEBUG variable:
+
+        DEBUG = 'DEV' in os.environ
+
+19. Requirements.txt was updated:
+
+        pip freeze --local > requirements.txt
+
+20. In Heroku a new app called 'read-rave' was created, the url for the app was added to the ALLOWED_HOST in *settings.py*:
+
+        ALLOWED_HOSTS = ['localhost', 'read-rave.herokuapp.com']
+
+21. In *settings* of the created app Config Vars key value pairs were set to be as displayed below:
         
         KEY: ALLOWED_HOST           VALUE: read-rave-86b7234dccae.herokuapp.com
         KEY: CLOUDINARY_URL         VALUE: cloudinary:/...
@@ -718,19 +932,29 @@ Once API was built it was deployed in Heroku.
         KEY: DISABLE_COLLECTSATIC   VALUE: 1
         KEY: SECRET_KEY             VALUE: django-insecure-...
 
-5. In *Deploy* tab of the app *Deployement* method was selected to be GitHUb.
-6. *App connected to GitHub* was selected to the the *p5-book-review*.
-7. On *Manual Deploy* Deploye Branch was clicked to deploye the API.
-8. As a prepartion for the frontend side the env.py was updated to look as below:
+22. In *Deploy* tab of the app *Deployement* method was selected to be GitHUb.
+23. *App connected to GitHub* was selected to the the *p5-book-review*.
+24. On *Manual Deploy* Deploye Branch was clicked to deploye the API.
+25. As a prepartion for the frontend development DEBUG and CLIENT_ORIGIN variables were added to the env.py and the ALLOWED_HOST variable value was updated:
+
         import os
-        os.environ['CLOUDINARY_URL'] = 'cloudinary:/...'
-        os.environ['ALLOWED_HOST'] = 'https://read-rave-86b7234dccae.herokuapp.com'
         os.environ['SECRET_KEY'] = 'django-insecure-...'
         os.environ['DATABASE_URL'] = 'postgres://...'
+        os.environ['CLOUDINARY_URL'] = 'cloudinary:/...'
+        os.environ['ALLOWED_HOST'] = '[8000-port url without "https://" in the start and "/" in the end]'
+        os.environ['DEBUG'] = '1'
+        os.environ['CLIENT_ORIGIN'] = '[8080-port url without the "/" in the end]'
+
+26. Also in rr_drf *settings.py* a ALLOWED_HOST list was edited to followong:
+
+        ALLOWED_HOSTS = [
+        os.environ.get('ALLOWED_HOST'),
+        'localhost',
+    ]
 
 </details>
 
-### Deploying the Complete Application
+### Application Deployment
 As the React application is integrated into the API repository, a second deployment was required for the final product. Once React application was done second deployment was started. 
 
 <details><summary>View the steps</summary>
