@@ -17,7 +17,7 @@
 </div>
 
 ## About
-ReadRave is a online platform and a community for readers that allows you to review books and follow other readers for recommendations.
+ReadRave is an online platform and a community for readers that allows you to review books and follow other readers for recommendations.
 
 This application was made using primarily [React]() and [Django Rest Framework](). Django Rest Framework was used to build a backend API and frontend was build using React framework that consumes Django Rest Framework data. Both the backend and frontend are combined under one repository in this case. You can find the React Application inside the *frontend* folder of this repository.
 
@@ -148,7 +148,7 @@ Issues were added on the Github Projects Boards, a built in management tool from
 All together **number** user stories were drafted and Acceptance Criteria together with Tasks were created. View all user stories on the repository issues or on the project board [@P5 Book Review App Kanban](https://github.com/users/HMuraja/projects/5/views/1).
 
 ### Backend User Stories
-Following **9** user stories were implemented during the development of the backend API. Please see the [project issues] (https://github.com/HMuraja/p5-book-review/issues) for the relevant user stories with the **BackEnd tag**.
+Following **9** user stories were implemented during the development of the backend API. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant user stories with the **BackEnd tag**.
 
 <details><summary>Backend User Stories Table</summary>
 
@@ -214,15 +214,14 @@ If the user has already signed up and are logged out from their account they can
 User needs to enter username and their password and click sign in. The form will be validated and an error message will display if the sign in isn't successful.
 
 On successful login user will be led to the home page, and navigation menu will be updated displaying the profile of the logged in user.
-
-<img src="readme/features/feature-signinpage-desktop.png" height="400px">
-<img src="readme/features/feature-signin-mobile.png" height="400px">
-
-*Sign in page for desktop and mobile*
-
+<div align="center">
+<img src="readme/features/feature-signinpage-desktop.png" height="300px">
+<img src="readme/features/feature-signin-mobile.png" height="300px">
 <img src="readme/features/feature-signin-form-error-nomatch.png" height="300px">
 
-*Sign in error. *
+*Sign in page for desktop and mobile, sign in error.*
+</div>
+
 
 ### Signup
 
@@ -232,6 +231,7 @@ Sign up form requires user to choose a username and password. Password needs to 
 
 Successful sign up will lead the user to the sign in page. 
 
+<div align="center">
 <img src="readme/features/feature-signuppage-desktop.png" height="400px">
 <img src="readme/features/feature-signup-mobile.png" height="400px">
 
@@ -242,7 +242,8 @@ Successful sign up will lead the user to the sign in page.
 <img src="readme/features/feature-signup-form-nomach-error.png" height="300px">
 
 *Sign up form, too common password, no match error.*
-
+</div>
+ 
 ### Sign Out
 
 Once logged in, a sign out button is visible on the navigation menu on the top. Clicking the button will return the user to the home page.
@@ -257,11 +258,13 @@ Each review card displays an image of the reviewer, image of the book or a place
 On the right-hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
 
 On the top of the posts, you have a search bar enabling you to search reviews based on the title, book genre or author.
-
+<div align="center">
 <img src="readme/features/feature-homepage-desktop.png" height="300px">
 <img src="readme/features/feature-homepage-mobile.png" height="300px">
 
 *Homepage on desktop and mobile view.*
+</div>
+
 ### Search Functionality
 On the home page on top of all the reviews there is a search field. User can type here any search words and results will return reviews that have a match on the title, author, category or reviews author name. 
 
@@ -287,7 +290,7 @@ If the user clicks on the book image, they are led on to the review's page where
 
 <img src="readme/features/feature-reviewpage.png" height="500px">
 
-*Navigation menu's drop down menu on mobile view. *
+*Navigation menu's drop down menu on mobile view.*
 
 ### Comment
 
@@ -300,29 +303,29 @@ Successful submission will update the comments list and add the newly created co
 If the user wishes to edit their comment, they can click on the three dots on the corner of the comment. Clicking the three dots will open a selection from which the user can either choose to edit the comment or delete it. 
 
 Choosing edit will the edit form with the text field and submit button. Clicking submit will update the comment. Choosing delete will delete the comment and the comment icon on the review card will reduce by one. 
-
+<div align="center">
 <img src="readme/features/feature-comments.png" width="400px">
-
-*Comments section under the review.*
-
 <img src="readme/features/feature-comment-form.png" width="400px">
 
-*Comment form.*
+*Comments section under the review and comment form.*
 
 <img src="readme/features/feature-comments-increase.png" width="200px">
 
 *Comment icon and counter.*
+</div>
 
 ### Like
 If the user wants to like a review they have to sign in and navigate to the review they like. On the review card they must click on the heart icon, in order to like it or unlike it. The page will refresh and the number of likes will be updated and the heart icon will change depending on if the user liked (solid colored heart icon) or unliked (outlined icon). 
 
 An error message will display if a signed in user attempts to like their own review. 
 
+<div align="center">
 <img src="readme/features/feature-like-before.png" height="150px">
 <img src="readme/features/feature-like-after.png" height="150px">
 <img src="readme/features/feature-like-error-nolike.png" height="150px">
 
 *Like button before, after and error message if attempting to like own review.*
+</div>
 
 ### Add Review
 
@@ -349,8 +352,7 @@ A succesful submission will take the user to the review page.
 
 *Dropdown menu and a completed review form*
 
-<img src="readme/features/feature-createreview-err-image.png" width="300px">
-
+<img src="readme/features/feature-createreview-err-image.png" width="200px">
 <img src="readme/features/feature-createreviewform-unfilled.png" width="300px">
 
 *Error messages for create form*
@@ -363,11 +365,12 @@ A succesful submission will take the user to the review page.
 
 ### Edit and Delete Review
 Only a signed in user that is the owner of the review can edit or delete the review. User have to navigate to the review page and on the top corner there are three dots that act as an edit button. Clicking the icon will open a menu wth two icons delete and edit review.
-
+<div align="center">
 <img src="readme/features/feature-editreview.png" width="400px">
 <img src="readme/features/feature-editreview-menu.png" width="400px">
 
   *Review edit button and menu*
+</div>
 
 Edit review will open a edit form for the review. Edit form is identical to the create form, apart from being prepopulated with the review data. Once user is ready clicking submit will validate the fields ensuring the all data is filled correctly before sending the data to database. Any errors will be flagged unser the respective field. 
 
@@ -379,40 +382,46 @@ A panel for popular profiles is displayed on the right hand side, on desktop, an
 
 If user is signed in, on desktop view, there is a follow button right next to the profile, but on mobile view user needs to click to view the profile in order to access the follow button.
 
+<div align="center">
 <img src="readme/features/feature-popularprofiles-desktop.png" height="300px">
 <img src="readme/features/feature-popularprofiles-mobile.png" height="150px">
 
 *Popular profiles views.*
-
+</div>
+ 
 ### Follow
 
 When signed in user can follow and unfollow other profiles by simply clicking on the follow button either next to the profile on popular profiles(visible only on larger screens) or the button on the profile page. 
 
 THe follow button is light blue/grey when not followed and green once followed. Clicking again on followed button, will lead user unfollowing the profile. 
 
+<div align="center">
 <img src="readme/features/feature-profileview-unfollow.png" height="150px">
 <img src="readme/features/feature-profileview-followed.png" height="150px">
 
 *Profile that isn't followed and profile that is being followed*
+</div>
 
 ### Profile Page
 Clicking on any of the profiles on the popular profiles or my profile on the navigation menu will lead user to the profile page. Profile page summarises profile information on the top stating the name, displaying the image, number of reviews, follows and followers, in addition all users can add a small description to the profile. 
 
 On the bottom of the profile details are all the reviews the profile user has created. 
-
+<div align="center">
 <img src="readme/features/feature-myprofile-desktop.png" height="300px">
 <img src="readme/features/feature-myprofile-mobile.png" height="300px">
 
-*Profile page on desktop and mobile.*
+ *Profile page on desktop and mobile.*
+</div>
 
 If user is signed in and on their own profile page a three-dot button is visible on the upper corner. This allows user to edit the profile. Clicking the edit button will allow user to open three different editing forms: edit profile, change username and change password. 
+<div align="center">
+ <img src="readme/features/feature-myprofile-edit.png" height="150px">
+ <img src="readme/features/feature-myprofile-editform.png" height="150px">
+ <img src="readme/features/feature-myprofile-changenname.png" height="150px">
+ 
+ *Edit profile options*
+</div>
 
-<img src="readme/features/feature-myprofile-edit.png" height="150px">
-<img src="readme/features/feature-myprofile-editform.png" height="150px">
-<img src="readme/features/feature-myprofile-changenname.png" height="150px">
-
-*Edit profile options*
-</details>
 ## Reuse of components
 ReadRave, just like other React applications, is built of of components. Each component represents a part of the UI. It is a common practice to reuse components in React application as this makes the application maintenance and build easier and more flexible. 
 
