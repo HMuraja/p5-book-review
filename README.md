@@ -19,21 +19,21 @@
 ## About
 ReadRave is a online platform and a community for readers that allows you to review books and follow other readers for recommendations.
 
-This application was made using primarly [React]() and [Django Rest Framework](). Django Rest Framework was used to build a backend API and frontend was build using React framework that consumes Django Rest Framework data. Both the backend and frontend are combined under one repository in this case. You can find the React Application inside the *fronend* folder of this repository.
+This application was made using primarily [React]() and [Django Rest Framework](). Django Rest Framework was used to build a backend API and frontend was build using React framework that consumes Django Rest Framework data. Both the backend and frontend are combined under one repository in this case. You can find the React Application inside the *frontend* folder of this repository.
 
 For further information feel free to keep reading or if you want to view the ready project click [here](https://read-rave-86b7234dccae.herokuapp.com/).
 
 
 ## Project Goals
 
-- Build an online platform allowing users to share their interst on books.
+- Build an online platform allowing users to share their interest on books.
 - Allows users to post reviews, read reviews and follow readers alike.
 - All visitors to the page should be able to view reviews.
 - Registered users should be able to share a review with a photo, review content and review score.
 - Registered users should be able to like and comment on reviews.
 - Application should be responsive on different screen sizes.
 - Application should provide a simple intuitive interface that is easy to navigate.
-- Sites layout and colorscheme is pleasing and keeps users coming back to it.
+- Sites layout and color scheme is pleasing and keeps users coming back to it.
 
 ### Problem Statement
 Every project needs a problem statement and for this project the following statement was generated:
@@ -41,7 +41,7 @@ Every project needs a problem statement and for this project the following state
 - "I am **a user** trying to **find an application where I can share, read and follow content about the books I like** but **I can't find one** because **other applications aren't specific enough** which makes me feel **like I can't share my passion for books with anyone**."
 
 ### Frontend Developer Role 
-This project was made with an intent to demonstrate advanced frontend skills and few pricipals were followed in order to simulate the essential and important role that frontend developers play in a larger team:
+This project was made with an intent to demonstrate advanced frontend skills and few principles were followed in order to simulate the essential and important role that frontend developers play in a larger team:
 - Craft an user interfaces (UI) and optimize user experiences (UX). 
 - Design and implement visually appealing interface, ensuring compatibility across different browsers and devices.
 - Integrate Front-End to the Back-End systems. 
@@ -51,7 +51,7 @@ This project was made with an intent to demonstrate advanced frontend skills and
 ## UX/UI - Design
 ### Wireframes
 - Wireframes were made with Figma.
-- Wireframes were made to have quidelines for styling the pages, but not set rules for final product. 
+- Wireframes were made to have guidelines for styling the pages, but not set rules for final product. 
 - Released project was broadly similar to the drafted wireframes.
 - Most notable changes to the wireframes was the review cards layout. 
 
@@ -108,10 +108,10 @@ This project was made with an intent to demonstrate advanced frontend skills and
 
 ### Color Scheme
 Following color were selected for the project:
-- Charcoal : Text, borders and details
-- Mint Green : Logo, Highlights
-- Coral Red : Logo, Highlights
-- White : Background and models
+- Charcoal: Text, borders and details
+- Mint Green: Logo, Highlights
+- Coral Red: Logo, Highlights
+- White: Background and models
 - Smoke White/Grey : Background
 
 <img src="readme/color-schema.png" width="75%">
@@ -128,27 +128,27 @@ The data diagram has 5 models user, profile, review, comment and like.
 
 
 ## Agile Stragety
-Agile methodologies were applied in the development process of this project. Following principles were kept in mind during he process:
+Agile methodologies were applied in the development process of this project. Following principles were kept in mind during the process:
 - Development process maintained flexible, so changes could be implemented if it yielded better results.
-- Features where kept to minimum, avoiding useless features.
+- Features were kept to minimum, avoiding useless features.
 - Features were implemented in order of priority.
 - Project was developed in small iterations in order ensure functionality of each feature implemented.
 - Github Project board was used as an information radiator to manage feature implementation.
 - User Stories were used to design user centric features
 
 ## User Stories
-User Stories were made using the Github _Issues_ feature. Each issue equated a User Story. Each Issue was tagged with a lable, a Github Issues feature, based on it's importance for the application. Following labels were created (listed in order of importance): 
+User Stories were made using the Github _Issues_ feature. Each issue equated a User Story. Each Issue was tagged with a label, a Github Issues feature, based on it's importance for the application. Following labels were created (listed in order of importance): 
 - Must have
 - Should have
 - Could have
 - Nice to have
 
-Issues were added on the Github Projects Boards, a builtin management tool from GitHub, as tasks. The implementation of the features was tracked by moving the tasks on each of the boards column. Three columns were named: Todo, InProgress and Done.
+Issues were added on the Github Projects Boards, a built in management tool from GitHub, as tasks. The implementation of the features was tracked by moving the tasks on each of the boards column. Three columns were named: Todo, InProgress and Done.
 
 All together **number** user stories were drafted and Acceptance Criteria together with Tasks were created. View all user stories on the repository issues or on the project board [@P5 Book Review App Kanban](https://github.com/users/HMuraja/projects/5/views/1).
 
 ### Backend User Stories
-Following **9** user stories were implemented during the development of the backedn API. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant userstories with the **BackEnd tag**.
+Following **9** user stories were implemented during the development of the backend API. Please see the [project issues] (https://github.com/HMuraja/p5-book-review/issues) for the relevant user stories with the **BackEnd tag**.
 
 <details><summary>Backend User Stories Table</summary>
 
@@ -167,7 +167,7 @@ Following **9** user stories were implemented during the development of the back
 </details>
 
 ### Frontend User Stories
-Following **11** user stories were implemented during the development of the fronend interface. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant userstories with the **frontend tag**.
+Following **11** user stories were implemented during the development of the front end interface. Please see the [project issues](https://github.com/HMuraja/p5-book-review/issues) for the relevant user stories with the **frontend tag**.
 
 <details>
 <summary>Frontend User Stories Table</summary>
@@ -191,7 +191,7 @@ Following **11** user stories were implemented during the development of the fro
 ## Features
 
 ### Header/Navigation Menu
-App icon and the navigation items are placed on the top of the application. The navigation menu items are links to home, feed, profile and signup pages. Navigatio options available for the viewer are login, signup and home. Icon works as a link to home page. 
+App icon and the navigation items are placed on the top of the application. The navigation menu items are links to home, feed, profile and signup pages. Navigation options available for the viewer are login, signup and home. Icon works as a link to home page. 
  
 On Medium sized screens and smaller the menu collapses into a dropdown menu.
 
@@ -211,9 +211,9 @@ On Medium sized screens and smaller the menu collapses into a dropdown menu.
 
 If the user has already signed up and are logged out from their account they can press *Sign In* button on the navigation menu and a sign in form will render.
 
-User needs to enter username and their password and click sign in. The form will be validated and an error message will display if the sign in isn't succesful.
+User needs to enter username and their password and click sign in. The form will be validated and an error message will display if the sign in isn't successful.
 
-On succesfull login user will be led to the home page, and navigation mneu will be updated dsiplaying the profile of the logged in user.
+On successful login user will be led to the home page, and navigation menu will be updated displaying the profile of the logged in user.
 
 <img src="readme/features/feature-signinpage-desktop.png" height="400px">
 <img src="readme/features/feature-signin-mobile.png" height="400px">
@@ -222,15 +222,15 @@ On succesfull login user will be led to the home page, and navigation mneu will 
 
 <img src="readme/features/feature-signin-form-error-nomatch.png" height="300px">
 
-*Sign in error.*
+*Sign in error. *
 
 ### Signup
 
-If the user wants more customized experience of the applicatiopn or want's to share content they must sign up. User opens up the sign up form, by clicking the sign up link/button on the navigation menu or the link on the sign in form. 
+If the user wants more customized experience of the application or want's to share content they must sign up. User opens up the sign up form, by clicking the sign up link/button on the navigation menu or the link on the sign in form. 
 
-Sign up form requires user to choose a username and password. Password needs to be entered twice. If passwords entered don't match or the passowrd is too simple an error message will display. 
+Sign up form requires user to choose a username and password. Password needs to be entered twice. If passwords entered don't match or the password is too simple an error message will display. 
 
-Succsesfull sign up will lead the user to the sign in page. 
+Successful sign up will lead the user to the sign in page. 
 
 <img src="readme/features/feature-signuppage-desktop.png" height="400px">
 <img src="readme/features/feature-signup-mobile.png" height="400px">
@@ -241,29 +241,29 @@ Succsesfull sign up will lead the user to the sign in page.
 <img src="readme/features/feature-signup-form-error-common.png" height="300px">
 <img src="readme/features/feature-signup-form-nomach-error.png" height="300px">
 
-*Sign up form, too common password, no mach error.*
+*Sign up form, too common password, no match error.*
 
 ### Sign Out
 
-Once logged in, a sign out button is visible on the navigation menu on the top. Clickign the button will return the user to the home page.
+Once logged in, a sign out button is visible on the navigation menu on the top. Clicking the button will return the user to the home page.
 
 <img src="readme/features/feature-signout-btn.png">
 
 ### Home Menu/Review List
-The home page or the landing displays all the shared review cards. All reviews are displayed one after each other and 10 most recent reviews are downloaded at a time.Scrolls down will dowload more reviews. 
+The home page or the landing displays all the shared review cards. All reviews are displayed one after each other and 10 most recent reviews are downloaded at a time. Scrolls down will download more reviews. 
 
 Each review card displays an image of the reviewer, image of the book or a placeholder image, book title, book author, caption for the review and the number of stars given. On the bottom corner there is also a number of likes and comments each review has. 
 
-On the right hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
+On the right-hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
 
-On the top of the posts you have a search bar enabling you to search reviews based on the title, book genre or author.
+On the top of the posts, you have a search bar enabling you to search reviews based on the title, book genre or author.
 
 <img src="readme/features/feature-homepage-desktop.png" height="300px">
 <img src="readme/features/feature-homepage-mobile.png" height="300px">
 
 *Homepage on desktop and mobile view.*
 ### Search Functionality
-On the home page on top of all the reviews there is a search field. User can type here any search words and results will rerurn reviews that have a match on the title, author, category or reviews author name. 
+On the home page on top of all the reviews there is a search field. User can type here any search words and results will return reviews that have a match on the title, author, category or reviews author name. 
 
 <img src="readme/features/feature-searchfield.png">
 
@@ -273,33 +273,33 @@ If no results are found an error message and image will be displayed.
 
 <img src="readme/features/feature-searchfield-noresults.png" height="300px">
 
-*Error image and message.*
+*Error image and message. *
 
 ### Liked and Feed Pages 
 Application also offers two additional listing options for the user. 
 
-First on is called *Feed*. If the user is signed in they can accsess the feed from navigation menu, by clciking "Feed". This page will list only the reviews from the profiles user follows. If no profiles are followed no reviews are shown.
+First on is called *Feed*. If the user is signed in they can access the feed from navigation menu, by clicking "Feed". This page will list only the reviews from the profiles user follows. If no profiles are followed no reviews are shown.
 
 The other option is *Liked*, which can be accessed similarly through navigation menu, if user is signed in. Liked page list all the reviews user has liked. No reviews are shown again if user hasn't liked any reviews.
 
 ### Review Page
-If the user clicks on the book image, they are lead on to the review's page where user can read the review and view comments. 
+If the user clicks on the book image, they are led on to the review's page where user can read the review and view comments. 
 
 <img src="readme/features/feature-reviewpage.png" height="500px">
 
-*Navigation menu's drop down menu on mobile view.*
+*Navigation menu's drop down menu on mobile view. *
 
 ### Comment
 
-USer scan leave comment to the reviews, and they can be seen on the reviewpage. All the comments left to the review are listed from most recent to the oldes under the review content.
+User scan leave comment to the reviews, and they can be seen on the review page. All the comments left to the review are listed from most recent to the oldest under the review content.
 
-If the user isnät signed in, they can only see the comments left to the review. For users signed in a review fomr is visible. Review form has only one text field and a submit button. 
+If the user isn’t signed in, they can only see the comments left to the review. For users signed in a review form is visible. Review form has only one text field and a submit button. 
 
-Succesful submission will update the comments list and add the newly created comment on the top of the list. Also the comments icon on the review card will update by increasign one number. 
+Successful submission will update the comments list and add the newly created comment on the top of the list. Also the comments icon on the review card will update by increasing one number. 
 
 If the user wishes to edit their comment, they can click on the three dots on the corner of the comment. Clicking the three dots will open a selection from which the user can either choose to edit the comment or delete it. 
 
-Chooign edit will the edit form with the text field and submit button. Clciking submit will update the comment. Choosing delete will delete the comment and the comment icon on the review card will reduce by one. 
+Choosing edit will the edit form with the text field and submit button. Clicking submit will update the comment. Choosing delete will delete the comment and the comment icon on the review card will reduce by one. 
 
 <img src="readme/features/feature-comments.png" width="400px">
 
@@ -328,7 +328,7 @@ An error message will display if a signed in user attempts to like their own rev
 
 If user wants to create a recipe they must click on the button at the navigation menu or the navigation link stating *Add Review*.
 
-Clicking the link or the button should open the page with the "Add a Review"-form. All the fields, title, author, caption, content and score, are mandatory. If the user won't select an image it will be replaced with a placeholder image. Cathegory is seleceted from a list opened by dropdown menu. 
+Clicking the link or the button should open the page with the "Add a Review"-form. All the fields, title, author, caption, content and score, are mandatory. If the user won't select an image it will be replaced with a placeholder image. Category is selected from a list opened by dropdown menu. 
 
 Form will be validated before being sent to the database. If data is not completed correctly an error message will display under the respective fields.
 
@@ -369,15 +369,15 @@ Only a signed in user that is the owner of the review can edit or delete the rev
 
   *Review edit button and menu*
 
-Edit review will open a edit form for the review. Edit form is identical to the create form, apart from being prepopulated with the review data. Once user is ready clcikgin submit will validate the fields ensuring the all data is filled correctly before sending the data to database. Any errors will be flagged unser the respective field. 
+Edit review will open a edit form for the review. Edit form is identical to the create form, apart from being prepopulated with the review data. Once user is ready clicking submit will validate the fields ensuring the all data is filled correctly before sending the data to database. Any errors will be flagged unser the respective field. 
 
-If user wishes to delete the review they just need to clcik on the delete icon on the edit menu. 
+If user wishes to delete the review they just need to click on the delete icon on the edit menu. 
 
 ### Popular Profiles
 
-A panel for popular profiles is displayed on the right hand side, on desktop, and on the top below the navigation menu on mobile view. This panel displays the most followed profiles at that time. Clciking on any of these profiles will lead to the profile page. 
+A panel for popular profiles is displayed on the right hand side, on desktop, and on the top below the navigation menu on mobile view. This panel displays the most followed profiles at that time. Clicking on any of these profiles will lead to the profile page. 
 
-If user is signed in, on desktop view, there is a follow button right next to the profile, but on mobile view user needs to clcik to view the profile in order to access the follow button.
+If user is signed in, on desktop view, there is a follow button right next to the profile, but on mobile view user needs to click to view the profile in order to access the follow button.
 
 <img src="readme/features/feature-popularprofiles-desktop.png" height="300px">
 <img src="readme/features/feature-popularprofiles-mobile.png" height="150px">
@@ -386,7 +386,7 @@ If user is signed in, on desktop view, there is a follow button right next to th
 
 ### Follow
 
-When signed in user can follow and unfollow other profiles by simply clciking on the follow button either next to the profile on popular profiles(visible only on larger screens) or the button on the profile page. 
+When signed in user can follow and unfollow other profiles by simply clicking on the follow button either next to the profile on popular profiles(visible only on larger screens) or the button on the profile page. 
 
 THe follow button is light blue/grey when not followed and green once followed. Clicking again on followed button, will lead user unfollowing the profile. 
 
@@ -396,7 +396,7 @@ THe follow button is light blue/grey when not followed and green once followed. 
 *Profile that isn't followed and profile that is being followed*
 
 ### Profile Page
-Clciking on any of the profiles on the popular profiles or my profile on the navigation menu will lead user to the profile page. Profile page sumarises profile information on the top stating the name, displaying the image, number of reviews, follows and followers, in addition all users can add a small description to the profile. 
+Clicking on any of the profiles on the popular profiles or my profile on the navigation menu will lead user to the profile page. Profile page summarises profile information on the top stating the name, displaying the image, number of reviews, follows and followers, in addition all users can add a small description to the profile. 
 
 On the bottom of the profile details are all the reviews the profile user has created. 
 
@@ -405,7 +405,7 @@ On the bottom of the profile details are all the reviews the profile user has cr
 
 *Profile page on desktop and mobile.*
 
-If user is signed in and on their own profile page a three dot button is visible on the upper corner. This allows user to edit the profile. Clicking the edit  button will allow user to open three different editing forms: edit profile, chnange username and chnage password. 
+If user is signed in and on their own profile page a three-dot button is visible on the upper corner. This allows user to edit the profile. Clicking the edit button will allow user to open three different editing forms: edit profile, change username and change password. 
 
 <img src="readme/features/feature-myprofile-edit.png" height="150px">
 <img src="readme/features/feature-myprofile-editform.png" height="150px">
@@ -414,9 +414,9 @@ If user is signed in and on their own profile page a three dot button is visible
 *Edit profile options*
 </details>
 ## Reuse of components
-ReadRave, just like other React applications, is built of of components. Each component represents a part of the UI. It is a common practice to reuse components in React application as this makes the application maintenace and build easier and more flexible. 
+ReadRave, just like other React applications, is built of of components. Each component represents a part of the UI. It is a common practice to reuse components in React application as this makes the application maintenance and build easier and more flexible. 
 
-Reuse means that the same component is used to render UI features for the application in multiple places. This reduces the need to repeat a similar code and therefore make the code more consise and readable.
+Reuse means that the same component is used to render UI features for the application in multiple places. This reduces the need to repeat a similar code and therefore make the code more concise and readable.
 
 Below are few examples of the reusable components. 
 
@@ -427,10 +427,10 @@ Avatar.js-component renders the user image and name. It is required in multiple 
 - In **Profile.js** avatar is used to render the image and name for a user.
 - In **NavBar.js** avatar is used to render the logged in users name and image. 
 
-It accepts 4 props, image source, that renders the image for the avatar, a text that renders the text following the image, height for the image and a navBar parameter. All 4 properties define how Avatar componenent is defined in the given situation. 
+It accepts 4 props, image source, that renders the image for the avatar, a text that renders the text following the image, height for the image and a navBar parameter. All 4 properties define how Avatar component is defined in the given situation. 
 
 ### Asset.js
-An asset componenet was used to render spinners, message images or message text. Asset.js was used in:
+An asset component was used to render spinners, message images or message text. Asset.js was used in:
 - **ReviewsPage** before content has been loaded and when more content is being loaded.
 - **ReviewPage** before comments are loaded. 
 - **PopularProfiles** before profiles are loaded.
@@ -438,13 +438,13 @@ An asset componenet was used to render spinners, message images or message text.
 Asset componenet can take 3 props: spinner, src and message. More props are defined more complex asset instance is built.
 
 ### Comment.js
-Comment.js renders a comment instance details in user friendly form, detailing, comment author, comment, comment date and comment author image. The comment details just need to be given as props for the component once it is called. This way comments can be displayed in easy and readable form anywhere in the app, for exmple in **ReviewPage.js** each comment for the review are rendered by calling the comment component inside the map method. 
+Comment.js renders a comment instance details in user friendly form, detailing, comment author, comment, comment date and comment author image. The comment details just need to be given as props for the component once it is called. This way comments can be displayed in easy and readable form anywhere in the app, for example in **ReviewPage.js** each comment for the review are rendered by calling the comment component inside the map method. 
 
 ### Profile.js
-Profile component renders user id and image as a link to profile page, as well as a follow and unfollow buttons. Previously mentioned Asset.js is used to build this componenet, which is a great example how components can be nested inside eachother. Profile.js component is reused on **PopularProfiles.js** component to render a list of most popular profiles.
+Profile component renders user id and image as a link to profile page, as well as a follow and unfollow buttons. Previously mentioned Asset.js is used to build this component, which is a great example how components can be nested inside each other. Profile.js component is reused on **PopularProfiles.js** component to render a list of most popular profiles.
 
 ### Review.js
-Review  component is used to render the review isntance for the UI. It renders the book image, book name, author name, review author and their profile, date of creation, caption and book genre. The component is reused in **Reviews.js** to render a list of all the reviews published, each review is an instance of the Review.js component. Review.js is a good example of how the same component instances can have completely different content, yet similar "layout". Review.js takes the review instances as the prop, providing the dirrence between each component instance. 
+Review  component is used to render the review instance for the UI. It renders the book image, book name, author name, review author and their profile, date of creation, caption and book genre. The component is reused in **Reviews.js** to render a list of all the reviews published, each review is an instance of the Review.js component. Review.js is a good example of how the same component instances can have completely different content, yet similar "layout". Review.js takes the review instances as the prop, providing the difference between each component instance. 
 
 ### ReviewsPage.js
 As previously mentioned review component is reused inside the ReviewsPage.js component, but the ReviewsPage.js component is reused inside the App.js component. App.js the **root component** of the application and an "entry point" for all the other components. On this component ReviewsPage.js is used to render:
@@ -452,7 +452,7 @@ As previously mentioned review component is reused inside the ReviewsPage.js com
 - Feedpage that renders reviews from the authors the user follows.
 - Likedpage that renders the reviews user liked. 
 
-The contnent on the ReviewsPage.js is determined by the "filter" props value, as it is used as the part of *axiosReq.get* command when fetching the review data. This way the reviews used on the ReviewsPage-component instance to generate instances of Review-component can be customized as needed. 
+The content on the ReviewsPage.js is determined by the "filter" props value, as it is used as the part of *axiosReq.get* command when fetching the review data. This way the reviews used on the ReviewsPage-component instance to generate instances of Review-component can be customized as needed. 
 
 ## Languages Used
 **HTML5** - Used on templates to build the structure of the sites and render an iterface.   
@@ -521,7 +521,7 @@ In addition, responsivity and code was tested manually.
 
 ### Backend User Stories - Tests
 
-The final product was tested to confirm all acceptance criteria on the user stories, labelled as Backend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criterias were fullfilled.
+The final product was tested to confirm all acceptance criteria on the user stories, labelled as Backend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criteria were fulfilled.
 
 <details>
 <summary>USER STORY: Authentication</summary>
@@ -534,7 +534,7 @@ As a **user** I can **easily login and logout** so that **I can access the conte
     - [x] **Acceptance Criteria 1:** Users can't create instances without being logged in. 
 - **How the Criteria was tested**:
     - User can login using the login button on the Django Rest Framework (DRF) interface. 
-    - User id is used in review, follow, like and comment instances they create, to identify the creator and they can't create instaces without being logged in.  
+    - User id is used in review, follow, like and comment instances they create, to identify the creator and they can't create instances without being logged in.  
 </details>
 
 <details>
@@ -545,14 +545,14 @@ As a **user** I can **view, edit and delete my profile** so that **I can persona
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** A profile is automatically created and saved after user is created.
     - [x]  **Acceptance Criteria 2:** A placeholder image is added initially when profile is created.
-    - [x] **Acceptance Criteria 3:** Profiles can be sorted based onn filters and order parameters. 
+    - [x] **Acceptance Criteria 3:** Profiles can be sorted based on filters and order parameters. 
     - [x] **Acceptance Criteria 4:** Profile has a description field that the user can add.
     - [x] **Acceptance Criteria 5:** User can edit username, password and profile image to their profile.
 - **How the Criteria was tested**:
-    - In */profiles* url all profile instances are listed.
+    - In */profiles* URL all profile instances are listed.
     - If user signs up a profile instance is automatically created. 
     - A placeholder image is added to to the profile instance once created.
-    - User can edit the username, password and swicth the profile photo if logged in as the owner of the profile.
+    - User can edit the username, password and switch the profile photo if logged in as the owner of the profile.
     - User can add a personalized description text for their profile.
     - Profile instances can be filtered according all profiles followed by selected profile and profiles that are follow the selected profile.
     - Profile instances can be listed in order based on review counts, follower counts, following counts most recently followed profiles and most recently following profiles.
@@ -582,7 +582,7 @@ As a **user/viewer** I can **view anyone's profile details** so that **I can see
     - [x] **Acceptance Criteria 1:** List all comment instances.
     - [x] **Acceptance Criteria 2:** Filter comment instances based on the review.
 - **How the Criteria was tested**:
-    - Extension */comments/* was added to the root url. 
+    - Extension */comments/* was added to the root URL. 
     - It was confirmed that all comment instances were visible. 
     - The filtering functionality was tested by selecting a review book title name from the filters rendered by the DRF UI. 
     - The filtering worked as expected and displayed only the instances for the review selected. 
@@ -592,15 +592,15 @@ As a **user/viewer** I can **view anyone's profile details** so that **I can see
 <details>
 <summary>USER STORY: API and Frontend Communication</summary>
 
-As a **user** I can **easily access data saved on the application** so that **I can interact with others and the application seamlessly.**
+As a **user** I can **easily access data saved on the application** so that **I can interact with others and the application seamlessly. **
 
 - *Acceptance Criteria*
     - [x] **Acceptance Criteria 1:** Build an API that generates JSON data for the front end to consume.
     - [x]  **Acceptance Criteria 2:** Front end is able to send data to the API to consume. 
     - [x] **Acceptance Criteria 3:** Application features behave smoothly and easy to understand manner.
 - **How the Criteria was tested**:
-    - Once API was deployed, it was confimed that the all extension for the API worked and was formatted in legible JSON format. 
-    - Once Frontend was connected it was confimred it was possible to send send data to API and it was able to store it. New review, comment, profile, like and follow instances all appeared into the database and could be viewed in the JSON files. 
+    - Once API was deployed, it was confirmed that the all extension for the API worked and was formatted in legible JSON format. 
+    - Once Frontend was connected it was confirmed it was possible to send send data to API and it was able to store it. New review, comment, profile, like and follow instances all appeared into the database and could be viewed in the JSON files. 
     - The ReadRave was tested as whole  and all features behaved smoothly being able to send, create, edit and delete data where applicable as expected. 
 </details>
 
@@ -612,7 +612,7 @@ As a **user** I can **view the reviews I liked** so that **I can find easily any
     - [x] **Acceptance Criteria 1:** All like instances are listed.
     - [x]  **Acceptance Criteria 2:** Like instance list can be filtered according to the owner of the instance.
 - **How the Criteria was tested**:
-    - With the extension */likes* added to the root url, all like instances were listed.
+    - With the extension */likes* added to the root URL, all like instances were listed.
     - The filters are available, and offer option for filtering the likes based on the likes owner value.
     - When filter is selected only the like instances with the selected owner value are displayed. 
 </details>
@@ -626,9 +626,9 @@ As a **user** I can **boost the reviews I think are good** so that **I can have 
     - [x] **Acceptance Criteria 2:** Creating an instance automatically adds the liked review id to the like field.
 - **How the Criteria was tested**:
     - The create form is available only when user is logged.
-    - Delete button is available and works for the instances in */likes/[like_id]* url for the logged in users. 
+    - Delete button is available and works for the instances in */likes/[like_id]* URL for the logged in users. 
     - Logged in user can create an instance by choosing the liked review id from the list. 
-    - The created instance appears on the "/liked" url list.
+    - The created instance appears on the "/liked" URL list.
 </details>
 
 <details>
@@ -643,7 +643,7 @@ As a **user** I can **follow users that I like** so that **I modify my personal 
 - **How the Criteria was tested**:
     - In */followers/* url all follow instances are listed.
     - Create and delete functionalities are available only to the users logged in. 
-    - Logged in user can create through form and delete follow instance when navigating to the instace they have authored (/followers/[follow_id]/).
+    - Logged in user can create through form and delete follow instance when navigating to the instance they have authored (/followers/[follow_id]/).
     - A new instance is automatically added to the listed instances of follows and the user ID is automatically added to the instance, not requiring the user to specify it.
     - User can't follow twice and receives a 404 message "possible duplicate" when trying to do so.
 </details>
@@ -658,9 +658,9 @@ As a **user** I can **create, edit and delete review** so that **I can share a r
     - [x]  **Acceptance Criteria 2:** User can edit the title, caption, content and image.
 
 - **How the Criteria was tested**:
-    - In */reviews/* url all follow instances are listed.
+    - In */reviews/* URL all follow instances are listed.
     - Create and delete functionalities are available only to the users logged in.
-    - User can edit title, caption, content and image if they are logged in and the owner of the review in */reviews/[review id]/* url.
+    - User can edit title, caption, content and image if they are logged in and the owner of the review in */reviews/[review id]/* URL.
     - Editing form or delete button is not available for users not logged in not owner for the review.
 
 </details>
@@ -675,15 +675,15 @@ As a **user** I can **easily create a comment and edit/delete it if i want to **
     - [x] **Acceptance Criteria 3:** User can edit or delete an comment instance they made.
 
 - **How the Criteria was tested**:
-    - In */comments/* url logged in users can leave a comment. 
+    - In */comments/* URL logged in users can leave a comment. 
     - Reviews id is automatically added to the instance.
-    - In */comment/[comment id]/* url editing form and delete button are available for the user if they are the owner of the instance. 
+    - In */comment/[comment id]/* URL editing form and delete button are available for the user if they are the owner of the instance. 
     - Editing and deleting functionalities work.
 
 </details>
 
 ### Frontend User Stories - Test
-The final product was tested to confirm all acceptance criteria on the user stories, labelled as frontend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criterias were fullfilled.
+The final product was tested to confirm all acceptance criteria on the user stories, labelled as frontend found from [issues](https://github.com/HMuraja/p5-book-review/issues) was fulfilled. Below is the summary of all the user stories and the acceptance criteria. All criteria were fulfilled.
 
 <details>
 <summary>USER STORY: Following </summary>
@@ -698,8 +698,8 @@ As a **logged in user** I can **follow other users** so that **I can receive per
     - A button is next to profiles listed on the most popular profiles and on the profile page.
     - Button appearance is consistently similar across the app. 
     - On users own profile, they can see a summary of the total profiles followed.
-    - Logged in users can see on the their feed only prosts from the users they have followed.
-    - Clicking the follow button will changed it's appearance and change into "followed" text, clearly indicating of succesful action. 
+    - Logged in users can see on the their feed only reviews from the users they have followed.
+    - Clicking the follow button will changed it's appearance and change into "followed" text, clearly indicating of successful action. 
     - Clicking the button again will simply unfollow and the profile and change the appearance of the button back to "follow" text and color. 
 
 </details>
@@ -716,8 +716,8 @@ As a **user** I can **view a navbar from every page** so that **I can navigate e
 
 - **How the Criteria was tested**:
     - Navigation bar is fixed to the top of the application and visible at all times.
-    - From the width of 767 px and down navigation items appart from create review and logo collaps inside a menu icon. Clicking the menu items and outside of menu successfully close the menu.
-    - If the user is not logged only menu items avaialable are home, sign in and sign up. 
+    - From the width of 767 px and down navigation items apart from create review and logo collapse inside a menu icon. Clicking the menu items and outside of menu successfully close the menu.
+    - If the user is not logged only menu items available are home, sign in and sign up. 
     - When user is logged in the menu items change into add review, home, feed, liked, sign out and user profile.
     - All links work and lead to the features and function intended.     
     
@@ -734,7 +734,7 @@ As a **user** I can **easily login and logout** so that **I can access the conte
 - **How the Criteria was tested**:
     - Users that aren't logged in could only view profiles and reviews, they were also able to sign up and sign in.
     - Signed in users can access all the CRUD functionalities as long as the data they want to modify is created by them.
-    - If users that were not logged in attemted to access a functionality that requires authentication, like creating a new review they are redirected back to the home page. 
+    - If users that were not logged in attempted to access a functionality that requires authentication, like creating a new review they are redirected back to the home page. 
 </details>
 <details>
 <summary>USER STORY: Routing </summary>
@@ -763,8 +763,8 @@ As a **user** I can **easily make a review or edit a review** so that **I can sh
     - Create review form is easy to fill and each field is clearly labelled.
     - Not filling the form correctly will provide an error messages and prevent user from creating a new instance. 
     - Error messages describe clearly what user needs to fix in order to submit the review successfully. 
-    - When the owner of the review logged in they were able to click the revie wthey created and a more button is visible for them on the review page, they are able to click on it get a menu with two icons, one for editing and one for deleting. 
-    - Clciking edit rendered an edit review prociding similar form than creation for allowing user to edit the details successfully.
+    - When the owner of the review logged in they were able to click the revie they created and a more button is visible for them on the review page, they are able to click on it get a menu with two icons, one for editing and one for deleting. 
+    - Clicking edit rendered an edit review providing similar form than creation for allowing user to edit the details successfully.
     - Deletion deleted the review successfully. 
 </details>
 <details>
@@ -778,7 +778,7 @@ As a **user** I can **view other user profiles** so that **I can find and follow
 
 - **How the Criteria was tested**:
     - Profile pages were accessible for everyone regardless if they were signed in or not. 
-    - Clikcing the profile either on the review card, popular profiles list or if logged in on the my profile link on the main menu took the user to the profile page.
+    - Clicking the profile either on the review card, popular profiles list or if logged in on the my profile link on the main menu took the user to the profile page.
     - Profile page summarized profile information into easy to read UI, displaying the profile image, name, reviews number, followed profile number and follower profile number.
     - All the numbers updated successfully if the data changed. 
     - If profile is viewed by another user and they are logged in a follow button is available. 
@@ -795,11 +795,11 @@ As a **user** I can **view, edit or delete my profile** so that **I have full co
     - [x] **Acceptance Criteria 3:** User can personalize the profile to reflect them.
     - [x]  **Acceptance Criteria 3:** Profile displays clear summary of the user details.
 - **How the Criteria was tested**:
-    - Once user was logged the naviagtion menu shows the profile name and picture for the logged in user. 
+    - Once user was logged the navigation menu shows the profile name and picture for the logged in user. 
     - Clicking onto this lead the user to their profile page and a clear edit logo is visible on the corner of the profile page. 
-    - Clicking on the logo opened successfully optin sfor editing: edit, change username, change password.
+    - Clicking on the logo opened successfully option for editing: edit, change username, change password.
     - Editing rendered an easy to read form with the possibility to update the profile name and image. Editing the the details successfully update the profile data. 
-    - Updating the user name or password, render a simple form. Submitting the chnages successfully changed the user data. 
+    - Updating the user name or password, render a simple form. Submitting the changes successfully changed the user data. 
 </details>
 <details>
 <summary>USER STORY: View Comments </summary>
@@ -810,7 +810,7 @@ As a **a user** I can **read comments** so that **I can see what is the receptio
     - [x] **Acceptance Criteria 1:** Any user logged in or not can view comments.
 
 - **How the Criteria was tested**:
-    - Comments for the review are rendered successfully when clciking on the review interested at. 
+    - Comments for the review are rendered successfully when clicking on the review interested at. 
     - If no comments were available no comments were displayed under the comments header.
 
 </details>
@@ -827,11 +827,11 @@ As a **logged in user** I can **leave and edit comments** so that **I can share 
     - [x] **Acceptance Criteria :** Display edit/delete option only for the logged in users.
 - **How the Criteria was tested**:
     - When user was logged in a review form was rendered under the review on the review page, if user is not logged in comment form is absent and not accessible.
-    - Leave a comment form was easy and straighforward to fill, field for the text and submit for creating the comment instance. 
-    - Clicking submit generated comment instance successfully and the comment was visbile underneath the form. 
+    - Leave a comment form was easy and straightforward to fill, field for the text and submit for creating the comment instance. 
+    - Clicking submit generated comment instance successfully and the comment was visible underneath the form. 
     - All comments left state clearly the name of the owner, date created and the comment itself. 
-    - Edit icon was clearly visible for the logged in owner of the comment, and cliking the icon opens a menu with two option edit and delete. 
-    - Editing opens a edit form, with simple edit field with the text and submit button. Submit successfully upated the comment. 
+    - Edit icon was clearly visible for the logged in owner of the comment, and clicking the icon opens a menu with two option edit and delete. 
+    - Editing opens a edit form, with simple edit field with the text and submit button. Submit successfully updated the comment. 
     - Clicking delete successfully deleted the comment.
     - Also the comment counter on each review was updated once a comment was edited or deleted.
     
@@ -851,8 +851,8 @@ As a **logged in user** I can **like a review ** so that **I can encourage revie
     - Clicking the like heart on the list or on the review page generated a like instance, only if user was logged in and not owner of the review.
     - If logged in user attempted to like their own review they receive message *"You can't like your own review!"*
     -  Clicking the like icon as logged in user generated an number increase and heart icon change outline to solid red heart. 
-    - Clikcing again as logged in user deleted instance and changed heart from solid to outline only and decreaced the number. 
-    - Liked review appeared on the liked page for the logged in user, and similarly disapeard when unliked. 
+    - Clicking again as logged in user deleted instance and changed heart from solid to outline only and decreased the number. 
+    - Liked review appeared on the liked page for the logged in user, and similarly disappeared when unliked. 
 </details>
 <details>
 <summary>USER STORY: Read Reviews</summary>
@@ -864,27 +864,27 @@ As a **user** I can **easily access the reviews made by others** so that **I can
     - [x]  **Acceptance Criteria 2:** Any user can view review details by clicking the review. 
     - [x] **Acceptance Criteria 3:** Review details all the information reader might be interested of.
     - [x] **Acceptance Criteria 4:** Users easily find the reviews they are interested of. 
-    - [x] **Acceptance Criteria 5:** Listed reviews display an easy to disgest summary of the review.
+    - [x] **Acceptance Criteria 5:** Listed reviews display an easy to digest summary of the review.
 
 - **How the Criteria was tested**:
     - Home page with all the reviews was available to all users regardless of sign in status. 
     - Any user can also access the review details and review page by clicking the review interested in. 
     - The review page detailed all the relevant information for the viewer in readable format and organized format.
-    - Listed reviews detailed all the same information about the review as the review page, apart from the review text that is available only on the review page that they can access by clciking on the reviews listed. 
+    - Listed reviews detailed all the same information about the review as the review page, apart from the review text that is available only on the review page that they can access by clicking on the reviews listed. 
 
 </details>
 
-### Responsivenes
-The website was tested on diffrent screensizes using the Google Developer Tools to ensure user interface was responding accordingly on different screensizes. 
+### Responsiveness
+The website was tested on different screen sizes using the Google Developer Tools to ensure user interface was responding accordingly on different screen sizes. 
 
-All features of the ReadRave website were tested on 4 different screensizes:
+All features of the ReadRave website were tested on 4 different screen sizes:
 
 - iPhone 12 pro (390 x 844 px)
 - Galaxy Fold (280 x 653 px)
 - iPad Mini (768 x 1024 px)
-- Average Laptop Screensize (1366 x 768 px)
+- Average Laptop Screen size (1366 x 768 px)
 
-Website interface responded well on all the screensizes tested above. All text was readable and content wasn't shifting or covered when changing screensizes. All links, buttons and forms or other actionable features were easy to see and use in all screen sizes.
+Website interface responded well on all the screen sizes tested above. All text was readable and content wasn't shifting or covered when changing screen sizes. All links, buttons and forms or other actionable features were easy to see and use in all screen sizes.
 ## Code Validation
 ### Python Code Validation
 All Django Rest/API files were tested using the [CI Python Linter](https://pep8ci.herokuapp.com/). No errors were detected. 
@@ -1010,9 +1010,9 @@ Once API was built it was deployed in Heroku.
         KEY: DISABLE_COLLECTSATIC   VALUE: 1
         KEY: SECRET_KEY             VALUE: django-insecure-...
 
-22. In *Deploy* tab of the app *Deployement* method was selected to be GitHUb.
+22. In *Deploy* tab of the app *Deployment* method was selected to be GitHUb.
 23. *App connected to GitHub* was selected to the the *p5-book-review*.
-24. On *Manual Deploy* Deploye Branch was clicked to deploye the API.
+24. On *Manual Deploy* Deploy Branch was clicked to deploy the API.
 25. As a prepartion for the frontend development DEBUG and CLIENT_ORIGIN variables were added to the env.py and the ALLOWED_HOST variable value was updated:
 
         import os
@@ -1090,7 +1090,7 @@ As the React application is integrated into the API repository, a second deploym
     ~~~~
 11. A *runtime.txt* was created and the used python version, **python-3.9.16** was added to it, so that HEroku knows which version to use.
 12. As a final change in the repository the env.py comment out DEV and DEBUG parameters. 
-13. All changes were commited.
+13. All changes were committed.
 14. The previously created 'read-rave' app was opened in Heroku.
 15. In the settings tab and Config Vars was opened and add *'read-rave-86b7234dccae.herokuapp.com'* value for a CLIENT_ORIGIN key. The final Config Vars looked ike below:
 
@@ -1101,7 +1101,7 @@ As the React application is integrated into the API repository, a second deploym
         KEY: DISABLE_COLLECTSATIC   VALUE: 1
         KEY: SECRET_KEY             VALUE: django-insecure-...
 
-16. In *Deploy* taball settings was kept as from previous delpoyment and on *Manual Deploy* Deploy Branch was clicked to deploy the complete application.
+16. In *Deploy* tab settings was kept as from previous deployment and on *Manual Deploy* Deploy Branch was clicked to deploy the complete application.
 
 </details>
 
@@ -1111,9 +1111,9 @@ Following resources were used to help build this project:
 - Book reviews and reviews content were taken from [Amazon](https://www.amazon.co.uk/)
 - Placeholder image, cover photo and profile image was taken from [Pexels](https://www.pexels.com/)
 - Code Institutes walk through process "Moments" was used as an inspiration for this project.
-- [Django Docs](https://docs.djangoproject.com/en/4.2/) were used through out the process to solve issues and used for guidance.
-- [React Bootsrap Docs]([https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://react-bootstrap-v4.netlify.app/)) were used through out the process to solve issues and used for guidance.
-- [React Docs](https://legacy.reactjs.org/) were used through out the process to solve issues and used for guidance.
+- [Django Docs](https://docs.djangoproject.com/en/4.2/) were used throughout the process to solve issues and used for guidance.
+- [React Bootsrap Docs]([https://getbootstrap.com/docs/5.3/getting-started/introduction/](https://react-bootstrap-v4.netlify.app/)) were used throughout the process to solve issues and used for guidance.
+- [React Docs](https://legacy.reactjs.org/) were used throughout the process to solve issues and used for guidance.
 - [wc3 CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate the CSS code
 - [CI Python Linter](https://pep8ci.herokuapp.com/) was used to validate the python code.
 
