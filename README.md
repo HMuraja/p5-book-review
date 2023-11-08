@@ -189,19 +189,6 @@ Following **11** user stories were implemented during the development of the fro
 </details>
 
 ## Features
-### Landing Page
-The home page or the landing displays all the shared review cards. All reviews are displayed one after each other and 10 most recent reviews are downloaded at a time.Scrolls down will dowload more reviews. 
-
-Each review card displays an image of the reviewer, image of the book or a placeholder image, book title, book author, caption for the review and the number of stars given. On the bottom corner there is also a number of likes and comments each review has. 
-
-On the right hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
-
-On the top of the posts you have a search bar enabling you to search reviews based on the title, book genre or author.
-
-<img src="readme/features/feature-homepage-desktop.png" height="300px">
-<img src="readme/features/feature-homepage-mobile.png" height="300px">
-
-*Homepage on desktop and mobile view.*
 
 ### Header/Navigation Menu
 App icon and the navigation items are placed on the top of the application. The navigation menu items are links to home, feed, profile and signup pages. Navigatio options available for the viewer are login, signup and home. Icon works as a link to home page. 
@@ -262,12 +249,80 @@ Once logged in, a sign out button is visible on the navigation menu on the top. 
 
 <img src="readme/features/feature-signout-btn.png">
 
+### Home Menu/Review List
+The home page or the landing displays all the shared review cards. All reviews are displayed one after each other and 10 most recent reviews are downloaded at a time.Scrolls down will dowload more reviews. 
+
+Each review card displays an image of the reviewer, image of the book or a placeholder image, book title, book author, caption for the review and the number of stars given. On the bottom corner there is also a number of likes and comments each review has. 
+
+On the right hand side(desktop) or on the top of post(mobile) most popular profiles are displayed.
+
+On the top of the posts you have a search bar enabling you to search reviews based on the title, book genre or author.
+
+<img src="readme/features/feature-homepage-desktop.png" height="300px">
+<img src="readme/features/feature-homepage-mobile.png" height="300px">
+
+*Homepage on desktop and mobile view.*
+### Search Functionality
+On the home page on top of all the reviews there is a search field. User can type here any search words and results will rerurn reviews that have a match on the title, author, category or reviews author name. 
+
+<img src="readme/features/feature-searchfield.png">
+
+*Searchfield for reviews*
+
+If no results are found an error message and image will be displayed. 
+
+<img src="readme/features/feature-searchfield-noresults.png" height="300px">
+
+*Error image and message.*
+
+### Liked and Feed Pages 
+Application also offers two additional listing options for the user. 
+
+First on is called *Feed*. If the user is signed in they can accsess the feed from navigation menu, by clciking "Feed". This page will list only the reviews from the profiles user follows. If no profiles are followed no reviews are shown.
+
+The other option is *Liked*, which can be accessed similarly through navigation menu, if user is signed in. Liked page list all the reviews user has liked. No reviews are shown again if user hasn't liked any reviews.
+
 ### Review Page
 If the user clicks on the book image, they are lead on to the review's page where user can read the review and view comments. 
 
 <img src="readme/features/feature-reviewpage.png" height="500px">
 
 *Navigation menu's drop down menu on mobile view.*
+
+### Comment
+
+USer scan leave comment to the reviews, and they can be seen on the reviewpage. All the comments left to the review are listed from most recent to the oldes under the review content.
+
+If the user isnät signed in, they can only see the comments left to the review. For users signed in a review fomr is visible. Review form has only one text field and a submit button. 
+
+Succesful submission will update the comments list and add the newly created comment on the top of the list. Also the comments icon on the review card will update by increasign one number. 
+
+If the user wishes to edit their comment, they can click on the three dots on the corner of the comment. Clicking the three dots will open a selection from which the user can either choose to edit the comment or delete it. 
+
+Chooign edit will the edit form with the text field and submit button. Clciking submit will update the comment. Choosing delete will delete the comment and the comment icon on the review card will reduce by one. 
+
+<img src="readme/features/feature-comments.png" width="400px">
+
+*Comments section under the review.*
+
+<img src="readme/features/feature-comment-form.png" width="400px">
+
+*Comment form.*
+
+<img src="readme/features/feature-comments-increase.png" width="200px">
+
+*Comment icon and counter.*
+
+### Like
+If the user wants to like a review they have to sign in and navigate to the review they like. On the review card they must click on the heart icon, in order to like it or unlike it. The page will refresh and the number of likes will be updated and the heart icon will change depending on if the user liked (solid colored heart icon) or unliked (outlined icon). 
+
+An error message will display if a signed in user attempts to like their own review. 
+
+<img src="readme/features/feature-like-before.png" height="150px">
+<img src="readme/features/feature-like-after.png" height="150px">
+<img src="readme/features/feature-like-error-nolike.png" height="150px">
+
+*Like button before, after and error message if attempting to like own review.*
 
 ### Add Review
 
@@ -306,35 +361,58 @@ A succesful submission will take the user to the review page.
 
 </div>
 
-### Comment
+### Edit and Delete Review
+Only a signed in user that is the owner of the review can edit or delete the review. User have to navigate to the review page and on the top corner there are three dots that act as an edit button. Clicking the icon will open a menu wth two icons delete and edit review.
 
-On the bottom of the review page are the comments
+<img src="readme/features/feature-editreview.png" width="400px">
+<img src="readme/features/feature-editreview-menu.png" width="400px">
 
-### Profile
+  *Review edit button and menu*
 
-### Like
-If the user wants to like a review they have to sign in and navigate to the review they like. On the review card they must click on the heart icon, in order to like it or unlike it. The page will refresh and the number of likes will be updated and the heart icon will change depending on if the user liked (solid colored heart icon) or unliked (outlined icon). 
+Edit review will open a edit form for the review. Edit form is identical to the create form, apart from being prepopulated with the review data. Once user is ready clcikgin submit will validate the fields ensuring the all data is filled correctly before sending the data to database. Any errors will be flagged unser the respective field. 
 
-An error message will display if a signed in user attempts to like their own review. 
+If user wishes to delete the review they just need to clcik on the delete icon on the edit menu. 
 
-<img src="readme/features/feature-like-before.png" height="150px">
-<img src="readme/features/feature-like-after.png" height="150px">
-<img src="readme/features/feature-like-error-nolike.png" height="150px">
+### Popular Profiles
 
-*Like button before, after and error message if attempting to like own review.*
+A panel for popular profiles is displayed on the right hand side, on desktop, and on the top below the navigation menu on mobile view. This panel displays the most followed profiles at that time. Clciking on any of these profiles will lead to the profile page. 
+
+If user is signed in, on desktop view, there is a follow button right next to the profile, but on mobile view user needs to clcik to view the profile in order to access the follow button.
+
+<img src="readme/features/feature-popularprofiles-desktop.png" height="300px">
+<img src="readme/features/feature-popularprofiles-mobile.png" height="150px">
+
+*Popular profiles views.*
 
 ### Follow
 
-### Feed
+When signed in user can follow and unfollow other profiles by simply clciking on the follow button either next to the profile on popular profiles(visible only on larger screens) or the button on the profile page. 
 
-### Liked
+THe follow button is light blue/grey when not followed and green once followed. Clicking again on followed button, will lead user unfollowing the profile. 
 
-### Edit Review
-Logged in review owner has the option to edit review on the review detail page. 
+<img src="readme/features/feature-profileview-unfollow.png" height="150px">
+<img src="readme/features/feature-profileview-followed.png" height="150px">
 
-### Delete Review
-Logged in review owner has the option to delete review on the review detail page.
+*Profile that isn't followed and profile that is being followed*
 
+### Profile Page
+Clciking on any of the profiles on the popular profiles or my profile on the navigation menu will lead user to the profile page. Profile page sumarises profile information on the top stating the name, displaying the image, number of reviews, follows and followers, in addition all users can add a small description to the profile. 
+
+On the bottom of the profile details are all the reviews the profile user has created. 
+
+<img src="readme/features/feature-myprofile-desktop.png" height="300px">
+<img src="readme/features/feature-myprofile-mobile.png" height="300px">
+
+*Profile page on desktop and mobile.*
+
+If user is signed in and on their own profile page a three dot button is visible on the upper corner. This allows user to edit the profile. Clicking the edit  button will allow user to open three different editing forms: edit profile, chnange username and chnage password. 
+
+<img src="readme/features/feature-myprofile-edit.png" height="150px">
+<img src="readme/features/feature-myprofile-editform.png" height="150px">
+<img src="readme/features/feature-myprofile-changenname.png" height="150px">
+
+*Edit profile options*
+</details>
 ## Reuse of components
 ReadRave, just like other React applications, is built of of components. Each component represents a part of the UI. It is a common practice to reuse components in React application as this makes the application maintenace and build easier and more flexible. 
 
