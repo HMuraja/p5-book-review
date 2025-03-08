@@ -88,7 +88,6 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'corsheaders',
-
     'profiles',
     'reviews',
     'comments',
@@ -148,8 +147,8 @@ if 'DEV' in os.environ:
     }
 else:
     DATABASES = {
-        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-    }
+            'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+        }
 
 
 # Password validation
